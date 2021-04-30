@@ -1,14 +1,89 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {Component} from 'react';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
+import Button from "@material-ui/core/Button";
+import GifComparison from "./components/GifComparison"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hello World!
-      </header>
-    </div>
-  );
+
+    // benje.roy12@gmail.com
+    const titles = ["https://www.youtube.com/embed/S7xdgMoFWdk", "https://www.youtube.com/embed/eiqaqrHPixw",
+        "https://www.youtube.com/embed/BjzDJhZDw3M", "https://www.youtube.com/embed/C_fEIVwjrew",
+        "https://www.youtube.com/embed/EQfO7p05iVU", "https://www.youtube.com/embed/v-43wPyblUA"]
+
+    // aleeha.hashim11@gmail.com
+    const titles2 = ["https://www.youtube.com/embed/ZwULdrDijbI", "https://www.youtube.com/embed/Yn2tHcZEnF0",
+        "https://www.youtube.com/embed/J6Yy9eFTPak", "https://www.youtube.com/embed/gGrRMGr90qw",
+        "https://www.youtube.com/embed/EQfO7p05iVU", "https://www.youtube.com/embed/pFnQYgCPJyo"]
+
+    const [value, setValue] = React.useState('false');
+
+    let state = {
+        isSubmitted: false
+    };
+
+    const handleChange = (event) => {
+        console.log('handle change')
+        setValue(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        console.log('handle submit')
+        event.preventDefault();
+        if (value === 'playlist1') {
+            console.log('playlist1')
+            state.isSubmitted = true;
+        } else if (value === 'playlist2') {
+            state.isSubmitted = true;
+            console.log('playlist2')
+        } else {
+            console.log('error')
+        }
+    };
+
+    return (
+        <div className="App">
+            <h2>Playlist 1</h2>
+            {titles.map(function (name, index) {
+                return <iframe width="340" height="200" src={name}
+                               title="YouTube video player" frameBorder="0"
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                               allowFullScreen></iframe>;
+            })}
+
+            <h2>Playlist 2</h2>
+            {titles2.map(function (name, index) {
+                return <iframe width="340" height="200" src={name}
+                               title="YouTube video player" frameBorder="0"
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                               allowFullScreen></iframe>;
+            })}
+
+            <h2>Which playlist would you watch?</h2>
+
+            <form onSubmit={handleSubmit}>
+                <FormControl component="fieldset">
+                    <FormLabel component="legend">Select a playlist below.</FormLabel>
+                    <RadioGroup name="gender1" value={value} onChange={handleChange}>
+                        <FormControlLabel value="playlist1" control={<Radio/>} label="Playlist 1"/>
+                        <FormControlLabel value="playlist2" control={<Radio/>} label="Playlist 2"/>
+                    </RadioGroup>
+                    <Button type="submit" variant="outlined" color="primary">Submit</Button>
+                </FormControl>
+            </form>
+
+            {/*render conditionally*/}
+            <GifComparison/>
+
+        </div>
+    );
 }
 
+
 export default App;
+
