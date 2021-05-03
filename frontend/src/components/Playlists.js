@@ -1,4 +1,4 @@
-import GifComparison from "./GifComparison";
+import Comparison from "../components/Comparison"
 import React from "react";
 
 class Playlists extends React.Component {
@@ -42,7 +42,7 @@ class Playlists extends React.Component {
     render() {
         const renderGifs = () => {
             if (this.state.isSubmitted) {
-                return (<GifComparison/>);
+                return (<Comparison/>);
             } else {
                 return (
                     <div className="App">

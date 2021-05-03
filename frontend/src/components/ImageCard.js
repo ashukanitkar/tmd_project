@@ -10,6 +10,7 @@ import pug2 from '../assets/pug2.jpeg';
 import pug3 from '../assets/pug3.jpeg';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -22,8 +23,8 @@ const styles = theme => ({
   }
 });
 
-class GifComparison extends React.Component {
-
+class ImageCard extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -34,6 +35,11 @@ class GifComparison extends React.Component {
   }
 
   pug_images = [pug1, pug2, pug3]
+  pug_captions = [
+    "This text would describe the educational component we are trying to illustrate in the above photograph0.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph1.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph2."]
+  
   num_images = this.pug_images.length
 
   arrowClick(event) {
@@ -73,6 +79,9 @@ class GifComparison extends React.Component {
                 <IconButton aria-label="next" onClick={this.arrowClick} id="forward" disabled={this.state.current_image_index === this.num_images-1}>
                   <ArrowRightIcon />
                 </IconButton>
+                <Typography variant="subtitle1" gutterBottom align="justify">
+                {this.pug_captions[this.state.current_image_index]}
+                </Typography>
             </Grid>
             </div>
           </CardContent>
@@ -81,7 +90,7 @@ class GifComparison extends React.Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(GifComparison);
+export default withStyles(styles, { withTheme: true })(ImageCard);
 
 
 
