@@ -23,7 +23,7 @@ const styles = theme => ({
 });
 
 class GifComparison extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -37,12 +37,12 @@ class GifComparison extends React.Component {
   num_images = this.pug_images.length
 
   arrowClick(event) {
-    if (event.currentTarget.id == "forward") {
+    if (event.currentTarget.id === "forward") {
       this.setState({
         current_image_index: Math.min(this.state.current_image_index + 1, this.pug_images.length-1),
         current_image: this.pug_images[Math.min(this.state.current_image_index + 1, this.pug_images.length-1)]
       })
-      
+
     } else {
       this.setState({
         current_image_index: Math.max(this.state.current_image_index - 1, 0),
@@ -67,10 +67,10 @@ class GifComparison extends React.Component {
           <CardContent>
             <div className={classes.controls}>
             <Grid container justify="center">
-                <IconButton aria-label="previous" onClick={this.arrowClick} id="backward" disabled={this.state.current_image_index == 0}>
+                <IconButton aria-label="previous" onClick={this.arrowClick} id="backward" disabled={this.state.current_image_index === 0}>
                   <ArrowLeftIcon />
                 </IconButton>
-                <IconButton aria-label="next" onClick={this.arrowClick} id="forward" disabled={this.state.current_image_index == this.num_images-1}>
+                <IconButton aria-label="next" onClick={this.arrowClick} id="forward" disabled={this.state.current_image_index === this.num_images-1}>
                   <ArrowRightIcon />
                 </IconButton>
             </Grid>
