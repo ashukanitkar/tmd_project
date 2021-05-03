@@ -23,7 +23,7 @@ const styles = theme => ({
   }
 });
 
-class GifComparison extends React.Component {
+class ImageCard extends React.Component {
   
   constructor(props) {
     super(props);
@@ -90,7 +90,7 @@ class GifComparison extends React.Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(GifComparison);
+export default withStyles(styles, { withTheme: true })(ImageCard);
 
 
 

@@ -7,7 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Button from "@material-ui/core/Button";
-import GifComparison from "./components/GifComparison"
+import Comparison from './components/Comparison';
 
 class App extends React.Component {
         
@@ -52,7 +52,7 @@ class App extends React.Component {
     render() {
         const renderGifs = () => {
         if (this.state.isSubmitted) {
-            return (<GifComparison/>);
+            return (<Comparison/>);
         } else {
             return (
                 <div className="App">
