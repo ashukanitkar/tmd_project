@@ -2,6 +2,10 @@ import React from "react";
 import {Redirect, withRouter} from "react-router-dom";
 import Button from "@material-ui/core/Button";
 
+// TODO - change to actual watch history file later, using small file for now
+import jsonData from '../watch_histories_small.json'
+import {Typography} from "@material-ui/core";
+
 class Playlists extends React.Component {
     constructor(props) {
         super(props);
@@ -12,16 +16,6 @@ class Playlists extends React.Component {
         this.onValueChange = this.onValueChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
     }
-
-    // benje.roy12@gmail.com
-    titles = ["https://www.youtube.com/embed/S7xdgMoFWdk", "https://www.youtube.com/embed/eiqaqrHPixw",
-        "https://www.youtube.com/embed/BjzDJhZDw3M", "https://www.youtube.com/embed/C_fEIVwjrew",
-        "https://www.youtube.com/embed/EQfO7p05iVU", "https://www.youtube.com/embed/v-43wPyblUA"]
-
-    // aleeha.hashim11@gmail.com
-    titles2 = ["https://www.youtube.com/embed/ZwULdrDijbI", "https://www.youtube.com/embed/Yn2tHcZEnF0",
-        "https://www.youtube.com/embed/J6Yy9eFTPak", "https://www.youtube.com/embed/gGrRMGr90qw",
-        "https://www.youtube.com/embed/EQfO7p05iVU", "https://www.youtube.com/embed/pFnQYgCPJyo"]
 
     onValueChange(event) {
         this.setState({
@@ -58,26 +52,39 @@ class Playlists extends React.Component {
                     </div>
                 )
             } else {
+                const loadData = () => JSON.parse(JSON.stringify(jsonData));
+                let playlists = []
+                Object.keys(loadData().users).forEach((key) => {
+                    let user = []
+                    loadData().users[key].videos.forEach((video) => {
+                        user.push(video);
+                    });
+                    playlists.push(user);
+                })
+
                 return (
                     <div className="App">
-                        <h2>Playlist 1</h2>
-                        {this.titles.map(function (name, index) {
-                            return <iframe width="340" height="200" src={name}
-                                           title="YouTube video player" frameBorder="0"
-                                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                           allowFullScreen></iframe>;
-                        })}
-
-                        <h2>Playlist 2</h2>
-                        {this.titles2.map(function (name, index) {
-                            return <iframe width="340" height="200" src={name}
-                                           title="YouTube video player" frameBorder="0"
-                                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                           allowFullScreen></iframe>;
+                        {playlists.map((playlist, idx) => {
+                            return (
+                                <div>
+                                    <h2>Playlist {idx + 1}</h2>
+                                    {playlist.map(video => {
+                                        return (
+                                            <div>
+                                                <Typography>{video.title}</Typography>
+                                                <iframe width="340" height="200" src={video.link}
+                                                        title="YouTube video player" frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                </iframe>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            )
                         })}
 
                         <h2>Which playlist would you watch?</h2>
-
 
                         <form onSubmit={this.formSubmit}>
                             <div className="radio">
@@ -114,4 +121,4 @@ class Playlists extends React.Component {
     }
 }
 
-export default withRouter (Playlists)
+export default withRouter(Playlists)
