@@ -1,39 +1,28 @@
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Playlists from "./Playlists";
-import {makeStyles} from "@material-ui/core";
-
-const useStyles = makeStyles({
-    navBar: {
-        background: "#a8dadc",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-    },
-
-    navItems: {
-        fontWeight: "700",
-        color: "black",
-        fontSize: "28px"
-
-    }
-})
+import {Button} from "@material-ui/core";
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import {useHistory} from "react-router-dom";
 
 const Home = () => {
-    const classes = useStyles()
+    const history = useHistory();
+    const navigateTo = () => history.push('/playlists');
 
     return (
         <div>
-            <AppBar position="sticky" className={classes.navBar}>
-                <Toolbar>
-                    <Typography className={classes.navItems}>
-                        YouTube Filter Bubbles - FIX ME
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Playlists/>
+            <h2>
+                welcome! we need to add some educational content here that users can read
+                through before they go onto selecting playlists
+
+                <br/>
+                <br/>
+
+                Click next to get started on selecting a playlist.
+            </h2>
+
+            <Button variant="contained" endIcon={<NavigateNextIcon/>} onClick={navigateTo}>
+                Next
+            </Button>
+
         </div>
     );
 }

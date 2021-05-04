@@ -1,5 +1,6 @@
-import Comparison from "../components/Comparison"
 import React from "react";
+import {Redirect, withRouter} from "react-router-dom";
+import Button from "@material-ui/core/Button";
 
 class Playlists extends React.Component {
     constructor(props) {
@@ -39,10 +40,23 @@ class Playlists extends React.Component {
         }
     }
 
+    navigateTo() {
+        this.props.history.push("/compare");
+    }
+
     render() {
         const renderGifs = () => {
             if (this.state.isSubmitted) {
-                return (<Comparison/>);
+                return (
+                    <div>
+                        <Redirect
+                            to={{
+                                pathname: "compare",
+                                state: {playlist: this.state.selectedOption}
+                            }}
+                        />
+                    </div>
+                )
             } else {
                 return (
                     <div className="App">
@@ -88,9 +102,9 @@ class Playlists extends React.Component {
                                     Playlist 2
                                 </label>
                             </div>
-                            <button className="btn btn-default" type="submit">
-                                Submit
-                            </button>
+                            <Button variant="contained" onClick={this.navigateTo.bind(this)}>
+                                See Results
+                            </Button>
                         </form>
                     </div>
                 )
@@ -100,4 +114,4 @@ class Playlists extends React.Component {
     }
 }
 
-export default Playlists
+export default withRouter (Playlists)
