@@ -2,22 +2,22 @@ from bs4 import BeautifulSoup
 import json
 import re
 
+# Left Winged Users: Benje, Candice
+# Right Winged Users: Derren, Dongxue
+# Control Users: Cole, Jaeden
+
 users = []
 
-## Fetch all watch histories
-# with open('INSERTHTMLFILEHERE', 'r') as f:
-# 	history = f.read()
-# 	users += [history]
-## Left Wing Users
+usernames  = ["benje", "candice", "derren", "dongxue", "cole", "jaeden"]
 
-# Aleeha
-with open("./watch_histories/aleeha-watch-history.html", "r") as f:
-    history = f.read()
-    users += [history]
-# Benjie
-with open("./watch_histories/benje-watch-history.html", "r") as f:
-    history = f.read()
-    users += [history]
+for username in usernames:
+    filename = "watch_histories/" + username + "-watch-history.html"
+    print(filename)
+    with open(filename, "r") as f:
+        history = f.read()
+        users += [history]
+
+print(f'Number of Users: {len(users)}')
 
 json_object = {"users": []}
 
@@ -46,4 +46,4 @@ print(output_json)
 with open('../frontend/src/watch_histories.json', 'w') as outfile:
     json.dump(json_object, outfile, indent=3)
 
-# Aleeha (0), Benje (1)
+

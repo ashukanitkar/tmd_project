@@ -1,15 +1,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import autoBind from 'auto-bind';
-// // TODO - change to actual watch history file later, using small file for now
-import jsonData from '../watch_histories_small.json'
+import jsonData from '../watch_histories.json'
 import { withStyles } from "@material-ui/core/styles";
-
-import {
-    Paper,
-    Button,
-    Typography
-} from '@material-ui/core'
+import { Paper, Button, Typography } from '@material-ui/core'
 
 const styles = theme => ({
     root: {
@@ -88,14 +82,30 @@ class Playlists extends React.Component {
         this.props.history.push("/compare");
     }
 
+    /**
+     * Shuffles array in place.
+     * @param {Array} a items An array containing the items.
+     */
+    shuffle(a) {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
+    }
+
     render() {
         const { classes, theme } = this.props;
         const loadData = () => JSON.parse(JSON.stringify(jsonData));
         let playlists = []
         Object.keys(loadData().users).forEach((key) => {
             let user = []
-            loadData().users[key].videos.forEach((video) => {
-                user.push(video);
+            let videos = this.shuffle(loadData().users[key].videos)
+            videos.slice(0,7).forEach((video) => {
+                user.push(video)
             });
             playlists.push(user);
         })
