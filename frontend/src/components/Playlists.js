@@ -7,14 +7,40 @@ import { Paper, Button, Typography } from '@material-ui/core'
 
 const styles = theme => ({
     root: {
-      width: "25%",
+        display: "flex",
+        flexDirection: "column",
+        fontFamily: "Montserrat",
+        fontWeight: "500",
+        padding: "25px",
     },
+
     SecondExample: {
         width: "50%",
         margin: "auto"
-    }
-  });
-  
+    },
+
+    primaryButton: {
+        background: "#ecc787",
+        fontFamily: "Montserrat",
+        fontWeight: "600",
+        alignSelf: "center",
+        marginTop: "30px",
+        '&:hover': {
+            backgroundColor: "#E9BD71",
+        },
+    },
+
+    playlistContainer: {
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    textHeader: {
+        alignSelf: "center"
+    },
+});
+
+
 function Project(props) {
     return (
         <Paper
@@ -26,15 +52,15 @@ function Project(props) {
             }}
             elevation={10}
         >
-            <div 
-            style={{
-                margin: "auto"
-            }}>
-                 <Typography>{props.item.title}</Typography>
-                 <iframe width="340" height="200" src={props.item.link}
-                    title="YouTube video player" frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen>
+            <div
+                style={{
+                    margin: "auto"
+                }}>
+                <Typography>{props.item.title}</Typography>
+                <iframe width="340" height="200" src={props.item.link}
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
                 </iframe>
             </div>
         </Paper>
@@ -54,7 +80,7 @@ class Playlists extends React.Component {
             navButtonsAlwaysInvisible: false,
             selectedOption: null
         }
-        
+
         this.onValueChange = this.onValueChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
 
@@ -98,7 +124,7 @@ class Playlists extends React.Component {
     }
 
     render() {
-        const { classes, theme } = this.props;
+        const {classes, theme} = this.props;
         const loadData = () => JSON.parse(JSON.stringify(jsonData));
         let playlists = []
         Object.keys(loadData().users).forEach((key) => {
@@ -110,11 +136,11 @@ class Playlists extends React.Component {
             playlists.push(user);
         })
         return (
-            <div style={{ marginTop: "50px", color: "#494949"}}>
+            <div className={classes.root}>
                 {playlists.map((playlist, idx) => {
                     return (
-                        <div>
-                            <h2>Playlist {idx + 1}</h2>
+                        <div className={classes.playlistContainer}>
+                            <h2 className={classes.textHeader}>Playlist {idx + 1}</h2>
                             <Carousel
                                 className={classes.SecondExample}
                                 autoPlay={this.state.autoPlay}
@@ -126,43 +152,45 @@ class Playlists extends React.Component {
 
                             >
                                 {
-                                    playlist.map( (video => <Project item={video} /> ))
+                                    playlist.map((video => <Project item={video}/>))
                                 }
                             </Carousel>
 
                         </div>
-                    )})}
-                    <h2>Which playlist would you watch?</h2>
+                    )
+                })}
+                <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
 
-                         <form onSubmit={this.formSubmit}>
-                             <div className="radio">
-                                 <label>
-                                     <input
-                                        type="radio"
-                                        value="playlist1"
-                                        checked={this.state.selectedOption === "playlist1"}
-                                        onChange={this.onValueChange}
-                                    />
-                                    Playlist 1
-                                </label>
-                            </div>
-                            <div className="radio">
-                                <label>
-                                    <input
-                                        type="radio"
-                                        value="playlist2"
-                                        checked={this.state.selectedOption === "playlist2"}
-                                        onChange={this.onValueChange}
-                                    />
-                                    Playlist 2
-                                </label>
-                            </div>
-                            <Button variant="contained" onClick={this.navigateTo.bind(this)}>
-                                See Results
-                            </Button>
-                        </form>
-                </div>
+                <form onSubmit={this.formSubmit} className={classes.textHeader}>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist1"
+                                checked={this.state.selectedOption === "playlist1"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 1
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist2"
+                                checked={this.state.selectedOption === "playlist2"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 2
+                        </label>
+                    </div>
+                    <Button variant="contained" onClick={this.navigateTo.bind(this)} className={classes.primaryButton}>
+                        See Results
+                    </Button>
+                </form>
+            </div>
         )
     }
 }
-export default withStyles(styles, { withTheme: true })(Playlists);
+
+export default withStyles(styles, {withTheme: true})(Playlists);

@@ -11,16 +11,18 @@ import Playlists from "./components/Playlists";
 
 const styles = theme => ({
     navBar: {
-        background: "#a8dadc",
+        background: "#131019",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
+        height: "100px",
     },
 
     navItems: {
         fontWeight: "700",
-        color: "black",
-        fontSize: "28px"
+        color: "white",
+        fontSize: "28px",
+        fontFamily: "Didot",
     }
 });
 
