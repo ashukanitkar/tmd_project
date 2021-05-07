@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid"
 import Box from '@material-ui/core/Box';
 import React from "react";
 import Button from "@material-ui/core/Button";
+import Dropdown from "./Dropdown";
 import {useHistory} from "react-router-dom";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
@@ -42,12 +43,28 @@ export default function Comparison(props) {
     return (
         <div className={classes.container}>
             <Box my="6%">
-                <Grid container direction="row" justify="space-evenly" alignItems="center">
+            <Grid
+  container
+  direction="row"
+  justify="space-evenly"
+  alignItems="flex-start"
+>
+                <Dropdown/>
+                <Dropdown/>
+                <Dropdown/>   
+                </Grid> 
+                <Grid
+  container
+  direction="row"
+  justify="space-evenly"
+  alignItems="flex-start"
+>
                 <ImageCard/>
                 <ImageCard/>
-                </Grid>
+                <ImageCard/>   
+                </Grid> 
+                      
             </Box>
-
             <Button variant="contained" onClick={navigateToPlaylists} className={classes.primaryButton}>
                 Select another playlist
             </Button>
