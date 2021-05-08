@@ -31,7 +31,6 @@ class ImageCard extends React.Component {
     //props should contain a index soon
     this.state = {
       current_image_index: 0,
-      current_image: pug1,
       image_dir : this.load_image_dir()
     }
     this.arrowClick = this.arrowClick.bind(this);
@@ -71,32 +70,35 @@ class ImageCard extends React.Component {
     return url 
   }
 
-  pug_images = [pug1, pug2, pug3]
+  //TO DO: Dynamic Captions
   pug_captions = [
     "This text would describe the educational component we are trying to illustrate in the above photograph0.",
     "This text would describe the educational component we are trying to illustrate in the above photograph1.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph2."]
+    "This text would describe the educational component we are trying to illustrate in the above photograph2.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph3.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph4.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph5.",
+    "This text would describe the educational component we are trying to illustrate in the above photograph6."]
+    
+  num_images = 7
   
-  num_images = this.pug_images.length
 
   arrowClick(event) {
     if (event.currentTarget.id === "forward") {
       this.setState({
-        current_image_index: Math.min(this.state.current_image_index + 1, this.pug_images.length-1),
-        current_image: this.pug_images[Math.min(this.state.current_image_index + 1, this.pug_images.length-1)]
+        current_image_index: Math.min(this.state.current_image_index + 1, this.num_images-1)
       })
 
     } else {
       this.setState({
-        current_image_index: Math.max(this.state.current_image_index - 1, 0),
-        current_image: this.pug_images[Math.max(this.state.current_image_index - 1, 0)]
+        current_image_index: Math.max(this.state.current_image_index - 1, 0)
       })
     }
   }
 
   render() {
         const { classes, theme } = this.props;
-        console.log(process.env.PUBLIC_URL + this.state.image_dir + this.state.current_image_index.toString() + '.png')
+        console.log(process.env.PUBLIC_URL + this.state.image_dir + (this.state.current_image_index+1).toString() + '.png')
         return (
         <Card className={classes.root} variant="outlined">
           <CardActionArea>
