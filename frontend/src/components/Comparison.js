@@ -7,7 +7,7 @@ import Dropdown from "./Dropdown";
 import {useHistory} from "react-router-dom";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { withStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom" 
 
 //Reference for ordering
 //users = ["Benje", "Candice", "Derren", "Dongxue", "Cole", "Jaeden"]
@@ -22,6 +22,28 @@ const styles = theme => ({
         marginTop: "30px",
         '&:hover': {
             backgroundColor: "#E9BD71",
+        },
+        marginRight: "10px",
+    },
+    secondaryButton: {
+        background: "#709956",
+        fontFamily: "Montserrat",
+        fontWeight: "600",
+        alignSelf: "center",
+        marginTop: "30px",
+        '&:hover': {
+            backgroundColor: "#709956",
+        },
+        marginRight: "10px",
+    },
+    defaultButton: {
+        background: "#deded8",
+        fontFamily: "Montserrat",
+        fontWeight: "600",
+        alignSelf: "center",
+        marginTop: "30px",
+        '&:hover': {
+            backgroundColor: "#deded8",
         },
         marginRight: "10px",
     },
@@ -64,7 +86,7 @@ class Comparison extends React.Component {
         const { classes, theme } = this.props;
         return (
             <div className={classes.container}>
-                <Box my="6%">
+                <Box mt="6%">
                 <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
                     {this.columns.map((column => {
                         return <Dropdown column={column} index={this.state.indexes[column]} functionCallFromParent = {this.parent_func.bind(this)}/>
@@ -77,12 +99,19 @@ class Comparison extends React.Component {
                     </Grid> 
                           
                 </Box>
-                <Button variant="contained" className={classes.primaryButton} component={Link} to="/playlists">
-                    Select another playlist
+                <Box py="3%">
+                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                <Button variant="contained" className={classes.primaryButton} component={Link} to="/findings">
+                    Continue to Findings
                 </Button>
-                <Button variant="contained" className={classes.primaryButton} component={Link} to="/">
+                <Button variant="contained" className={classes.secondaryButton} component={Link} to="/playlists">
+                    Select Another Playlist
+                </Button>
+                <Button variant="contained" className={classes.defaultButton} component={Link} to="/">
                     Start over
                 </Button>
+                </Grid>
+                </Box>
             </div>
         )
     }

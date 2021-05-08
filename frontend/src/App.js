@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./components/Home";
+import Findings from "./components/Findings";
 import Comparison from "./components/Comparison";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -43,6 +44,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Home}/>
                     <Route path="/playlists" component={Playlists}/>
                     <Route path="/compare" render={(props) => <Comparison {... props}/>}/>
+                    <Route path="/findings" component={Findings}/>
                 </Switch>
             </Router>
         )

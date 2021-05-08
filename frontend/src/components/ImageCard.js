@@ -32,8 +32,6 @@ class ImageCard extends React.Component {
   
   constructor(props) {
     super(props);
-    //props contains a property in COLUMN
-    //props should contain a index soon
     this.state = {
       current_image_index: 0,
       column: props.column, 
