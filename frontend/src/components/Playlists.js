@@ -154,7 +154,7 @@ class Playlists extends React.Component {
                         </label>
                     </div>
 
-                    <Button variant="contained" onClick={this.navigateTo.bind(this)} className={classes.primaryButton}>
+                    <Button variant="contained" onClick={this.navigateTo.bind(this)} disabled={!(this.state.selectedOption != null)} className={classes.primaryButton}>
                         See Results
                     </Button>
                 </form>

@@ -44,7 +44,7 @@ class Dropdown extends React.Component {
       const { classes, theme } = this.props;
       console.log(this.state.curr_user_index)
       return (
-        <FormControl required className={classes.formControl}>
+        <FormControl className={classes.formControl}>
         <Select
           onChange={this.handleChange}
           value={this.state.curr_user_index}
@@ -53,7 +53,6 @@ class Dropdown extends React.Component {
         <MenuItem value={1}>User {this.state.curr_column*2 + 2}</MenuItem>
 
         </Select>
-        <FormHelperText>Required</FormHelperText>
       </FormControl>
     )
   }
