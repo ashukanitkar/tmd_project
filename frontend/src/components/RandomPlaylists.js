@@ -77,6 +77,9 @@ class RandomPlaylists extends React.Component {
         const {classes, theme} = this.props;
         const loadData = () => JSON.parse(JSON.stringify(jsonData));
         let playlists = []
+        // Left Winged Users: Benje, Candice
+        // Right Winged Users: Derren, Dongxue
+        // Control Users: Cole, Jaeden
         Object.keys(loadData().users).forEach((key) => {
             let user = []
             let videos = this.shuffle(loadData().users[key].videos)

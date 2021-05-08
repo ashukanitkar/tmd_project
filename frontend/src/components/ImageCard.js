@@ -42,7 +42,6 @@ class ImageCard extends React.Component {
     let url = "Screenshots/"
     let column = this.props.column
     let index = this.props.index //temp
-    console.log("in the load image dir", column, index)
     if (column == 0) {
       url += "Left\ Wing/"
       if (index == 0) {
@@ -101,7 +100,6 @@ class ImageCard extends React.Component {
 
   render() {
         const { classes, theme } = this.props;
-        console.log(this.props.column, this.props.index, "in the image card comp")
         const image_dir = this.load_image_dir(this.props.column, this.props.index)
         console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png')
         return (

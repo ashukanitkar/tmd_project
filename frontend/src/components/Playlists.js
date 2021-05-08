@@ -1,9 +1,7 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel';
 import autoBind from 'auto-bind';
-import jsonData from '../watch_histories.json'
 import {withStyles} from "@material-ui/core/styles";
-import {Paper, Button, Typography} from '@material-ui/core'
+import {Button} from '@material-ui/core'
 import RandomPlaylists from './RandomPlaylists';
 
 const styles = theme => ({
@@ -13,11 +11,6 @@ const styles = theme => ({
         fontFamily: "Montserrat",
         fontWeight: "500",
         padding: "25px",
-    },
-
-    SecondExample: {
-        width: "50%",
-        margin: "auto"
     },
 
     primaryButton: {
@@ -69,7 +62,7 @@ class Playlists extends React.Component {
 
     formSubmit(event) {
         event.preventDefault();
-        if (this.state.selectedOption === "playlist1" || this.state.selectedOption === "playlist2") {
+        if (this.state.selectedOption.includes("user")) {
             this.setState({
                 isSubmitted: true
             })
@@ -79,7 +72,10 @@ class Playlists extends React.Component {
     }
 
     navigateTo() {
-        this.props.history.push("/compare");
+        this.props.history.push({
+            pathname: "/compare",
+            state: {user: this.state.selectedOption}
+        });
     }
 
 
@@ -95,8 +91,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist1"
-                                checked={this.state.selectedOption === "playlist1"}
+                                value="user0"
+                                checked={this.state.selectedOption === "user0"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 1
@@ -106,8 +102,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist2"
-                                checked={this.state.selectedOption === "playlist2"}
+                                value="user1"
+                                checked={this.state.selectedOption === "user1"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 2
@@ -117,8 +113,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist3"
-                                checked={this.state.selectedOption === "playlist3"}
+                                value="user2"
+                                checked={this.state.selectedOption === "user2"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 3
@@ -128,8 +124,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist4"
-                                checked={this.state.selectedOption === "playlist4"}
+                                value="user3"
+                                checked={this.state.selectedOption === "user3"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 4
@@ -139,8 +135,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist5"
-                                checked={this.state.selectedOption === "playlist5"}
+                                value="user4"
+                                checked={this.state.selectedOption === "user4"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 5
@@ -150,8 +146,8 @@ class Playlists extends React.Component {
                         <label>
                             <input
                                 type="radio"
-                                value="playlist6"
-                                checked={this.state.selectedOption === "playlist6"}
+                                value="user5"
+                                checked={this.state.selectedOption === "user5"}
                                 onChange={this.onValueChange}
                             />
                             Playlist 6

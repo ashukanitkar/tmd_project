@@ -8,6 +8,9 @@ import {useHistory} from "react-router-dom";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { withStyles } from "@material-ui/core/styles";
 
+//Reference for ordering
+//users = ["Benje", "Candice", "Derren", "Dongxue", "Cole", "Jaeden"]
+
 
 const styles = theme => ({
     primaryButton: {
@@ -37,19 +40,21 @@ class Comparison extends React.Component {
     
     constructor(props) {
         super(props)
+        let selected_user_index = props.location.state.user.slice(-1)
+        let initial_indexes = [0,0,0]
+        initial_indexes[Math.floor(selected_user_index/2)] = selected_user_index % 2
         this.state = {
             didUserSelectionChange: null,
-            indexes: [0, 0, 0]
+            
+            indexes: initial_indexes
         }
     }
 
     parent_func=(col, index) => {
-        console.log(col, index, "ok")
         var updatedIndexes = this.state.indexes
         updatedIndexes[col] = index
         this.setState({didUserSelectionChange: true,
                         indexes: updatedIndexes})
-        console.log(this.state.indexes)
     }
 
     columns = [0,1,2]
@@ -65,7 +70,7 @@ class Comparison extends React.Component {
                 <Box my="6%">
                 <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
                     {this.columns.map((column => {
-                        return <Dropdown column={column} functionCallFromParent = {this.parent_func.bind(this)}/>
+                        return <Dropdown column={column} index={this.state.indexes[column]} functionCallFromParent = {this.parent_func.bind(this)}/>
                     }))}  
                     </Grid> 
                     <Grid container direction="row" justify="space-evenly" alignItems="flex-start">

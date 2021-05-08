@@ -24,7 +24,7 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        curr_user_index: 0,
+        curr_user_index: this.props.index,
         curr_column: this.props.column
     }
   }
@@ -42,12 +42,12 @@ class Dropdown extends React.Component {
 
   render() {
       const { classes, theme } = this.props;
+      console.log(this.state.curr_user_index)
       return (
         <FormControl required className={classes.formControl}>
-        <InputLabel>User</InputLabel>
         <Select
           onChange={this.handleChange}
-          className={classes.selectEmpty}
+          value={this.state.curr_user_index}
         >  
         <MenuItem value={0}>User {this.state.curr_column*2 + 1}</MenuItem>
         <MenuItem value={1}>User {this.state.curr_column*2 + 2}</MenuItem>
