@@ -31,15 +31,18 @@ class ImageCard extends React.Component {
     //props should contain a index soon
     this.state = {
       current_image_index: 0,
-      image_dir : this.load_image_dir()
+      column: props.column, 
+      index: props.index
     }
     this.arrowClick = this.arrowClick.bind(this);
   }
+
   
   load_image_dir() {
     let url = "Screenshots/"
     let column = this.props.column
-    let index = 0 //temp
+    let index = this.props.index //temp
+    console.log("in the load image dir", column, index)
     if (column == 0) {
       url += "Left\ Wing/"
       if (index == 0) {
@@ -64,7 +67,7 @@ class ImageCard extends React.Component {
         url += "derren_right_R"
       }
       else {
-        url += "derren_right_R"
+        url += "dongxue_right_R"
       }
     }
     return url 
@@ -98,15 +101,17 @@ class ImageCard extends React.Component {
 
   render() {
         const { classes, theme } = this.props;
-        console.log(process.env.PUBLIC_URL + this.state.image_dir + (this.state.current_image_index+1).toString() + '.png')
+        console.log(this.props.column, this.props.index, "in the image card comp")
+        const image_dir = this.load_image_dir(this.props.column, this.props.index)
+        console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png')
         return (
         <Card className={classes.root} variant="outlined">
           <CardActionArea>
             <CardMedia
               component="img"
               alt="Pug1"
-              height="350"
-              image={process.env.PUBLIC_URL + this.state.image_dir + (this.state.current_image_index+1).toString() + '.png'}
+              height="800"
+              image={process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png'}
               title="Pug"
             />
           </CardActionArea>

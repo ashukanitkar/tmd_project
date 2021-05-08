@@ -49,6 +49,7 @@ class Comparison extends React.Component {
         updatedIndexes[col] = index
         this.setState({didUserSelectionChange: true,
                         indexes: updatedIndexes})
+        console.log(this.state.indexes)
     }
 
     columns = [0,1,2]
