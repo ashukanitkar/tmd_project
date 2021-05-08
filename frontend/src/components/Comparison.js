@@ -7,6 +7,7 @@ import Dropdown from "./Dropdown";
 import {useHistory} from "react-router-dom";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { withStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom"
 
 //Reference for ordering
 //users = ["Benje", "Candice", "Derren", "Dongxue", "Cole", "Jaeden"]
@@ -50,18 +51,14 @@ class Comparison extends React.Component {
         }
     }
 
+    columns = [0,1,2]
+
     parent_func=(col, index) => {
         var updatedIndexes = this.state.indexes
         updatedIndexes[col] = index
         this.setState({didUserSelectionChange: true,
                         indexes: updatedIndexes})
     }
-
-    columns = [0,1,2]
-    //history = useHistory();
-    //navigateToPlaylists = () => history.push('/playlists');
-    //navigateToHome = () => history.push('/');
-    //classes = useStyles()
 
     render() {
         const { classes, theme } = this.props;
@@ -80,12 +77,12 @@ class Comparison extends React.Component {
                     </Grid> 
                           
                 </Box>
-                {/* <Button variant="contained" onClick={navigateToPlaylists} className={classes.primaryButton}>
+                <Button variant="contained" className={classes.primaryButton} component={Link} to="/playlists">
                     Select another playlist
                 </Button>
-                <Button variant="contained" onClick={navigateToHome} className={classes.primaryButton}>
+                <Button variant="contained" className={classes.primaryButton} component={Link} to="/">
                     Start over
-                </Button> */}
+                </Button>
             </div>
         )
     }

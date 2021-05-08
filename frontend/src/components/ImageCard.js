@@ -51,7 +51,7 @@ class ImageCard extends React.Component {
         url += "candice_left_R"
       }
     }
-    else if (column == 1) {
+    else if (column == 2) {
       url += "Control/"
       if (index == 0) {
         url += "cole_control_R"
