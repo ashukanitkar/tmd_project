@@ -2,8 +2,8 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import autoBind from 'auto-bind';
 import jsonData from '../watch_histories.json'
-import { withStyles } from "@material-ui/core/styles";
-import { Paper, Button, Typography } from '@material-ui/core'
+import {withStyles} from "@material-ui/core/styles";
+import {Paper, Button, Typography} from '@material-ui/core'
 
 const styles = theme => ({
     root: {
@@ -130,7 +130,7 @@ class Playlists extends React.Component {
         Object.keys(loadData().users).forEach((key) => {
             let user = []
             let videos = this.shuffle(loadData().users[key].videos)
-            videos.slice(0,7).forEach((video) => {
+            videos.slice(0, 7).forEach((video) => {
                 user.push(video)
             });
             playlists.push(user);
@@ -184,6 +184,51 @@ class Playlists extends React.Component {
                             Playlist 2
                         </label>
                     </div>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist3"
+                                checked={this.state.selectedOption === "playlist3"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 3
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist4"
+                                checked={this.state.selectedOption === "playlist4"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 4
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist5"
+                                checked={this.state.selectedOption === "playlist5"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 5
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input
+                                type="radio"
+                                value="playlist6"
+                                checked={this.state.selectedOption === "playlist6"}
+                                onChange={this.onValueChange}
+                            />
+                            Playlist 6
+                        </label>
+                    </div>
+
                     <Button variant="contained" onClick={this.navigateTo.bind(this)} className={classes.primaryButton}>
                         See Results
                     </Button>
