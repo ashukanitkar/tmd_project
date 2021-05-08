@@ -2,12 +2,12 @@ import ImageCard from "./ImageCard"
 import Grid from "@material-ui/core/Grid"
 import Box from '@material-ui/core/Box';
 import React from "react";
-import Button from "@material-ui/core/Button";
 import Dropdown from "./Dropdown";
 import {useHistory} from "react-router-dom";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { withStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom" 
+import { Link } from "react-router-dom"
+import Button from "@material-ui/core/Button";
 
 //Reference for ordering
 //users = ["Benje", "Candice", "Derren", "Dongxue", "Cole", "Jaeden"]
@@ -60,7 +60,7 @@ const styles = theme => ({
 
 
 class Comparison extends React.Component {
-    
+
     constructor(props) {
         super(props)
         let selected_user_index = props.location.state.user.slice(-1)
@@ -68,36 +68,40 @@ class Comparison extends React.Component {
         initial_indexes[Math.floor(selected_user_index/2)] = selected_user_index % 2
         this.state = {
             didUserSelectionChange: null,
-            
+
             indexes: initial_indexes
         }
     }
 
     columns = [0,1,2]
 
-    parent_func=(col, index) => {
+    parent_func = (col, index) => {
         var updatedIndexes = this.state.indexes
         updatedIndexes[col] = index
-        this.setState({didUserSelectionChange: true,
-                        indexes: updatedIndexes})
+        this.setState({
+            didUserSelectionChange: true,
+            indexes: updatedIndexes
+        })
     }
 
     render() {
-        const { classes, theme } = this.props;
+        const {classes, theme} = this.props;
+
         return (
             <div className={classes.container}>
                 <Box mt="6%">
                 <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
                     {this.columns.map((column => {
                         return <Dropdown column={column} index={this.state.indexes[column]} functionCallFromParent = {this.parent_func.bind(this)}/>
-                    }))}  
-                    </Grid> 
+                    }))}
+                    </Grid>
                     <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
-                    {this.columns.map((column => {
-                        return <ImageCard column={column} index={this.state.indexes[column]}/>
-                    }))} 
-                    </Grid> 
-                          
+                        {this.columns.map((column => {
+                            // console.log("col: ", column)
+                            return <ImageCard column={column} index={this.state.indexes[column]}/>
+                        }))}
+                    </Grid>
+
                 </Box>
                 <Box py="3%">
                 <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
@@ -117,4 +121,4 @@ class Comparison extends React.Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(Comparison);
+export default withStyles(styles, {withTheme: true})(Comparison);

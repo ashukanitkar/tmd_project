@@ -11,10 +11,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
-  root: {
-    width: "25%",
-  },
-  controls: {
+    root: {
+        width: "25%",
+    },
+    controls: {
         alignItems: 'center',
         display: 'flex'
   },
@@ -45,18 +45,18 @@ class ImageCard extends React.Component {
     let url = "Screenshots/"
     let column = this.props.column
     let index = this.props.index //temp
-    if (column == 0) {
+    if (column === 0) {
       url += "Left\ Wing/"
-      if (index == 0) {
+      if (index === 0) {
         url += "benje_left_R"
       }
       else {
         url += "candice_left_R"
       }
     }
-    else if (column == 2) {
+    else if (column === 2) {
       url += "Control/"
-      if (index == 0) {
+      if (index === 0) {
         url += "cole_control_R"
       }
       else {
@@ -65,7 +65,7 @@ class ImageCard extends React.Component {
     }
     else {
       url += "Right\ Wing/"
-      if (index == 0) {
+      if (index === 0) {
         url += "derren_right_R"
       }
       else {
@@ -75,36 +75,68 @@ class ImageCard extends React.Component {
     return url 
   }
 
-  //TO DO: Dynamic Captions
-  pug_captions = [
-    "This text would describe the educational component we are trying to illustrate in the above photograph0.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph1.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph2.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph3.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph4.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph5.",
-    "This text would describe the educational component we are trying to illustrate in the above photograph6."]
-    
-  num_images = 7
-  
+    captions = [[[['left-center, left-center,       left ,         NaN, left-center,       left'],
+        ['left-center, left-center,         NaN,       left , left-center, left-center'],
+        ['left-center, left-center, left-center, left-center,  least bias,  least bias'],
+        ['least bias, left-center, left-center,       left , left-center, left-center'],
+        ['least bias,  least bias, left-center, left-center,  least bias,  least bias'],
+        ['least bias, left-center,         NaN, left-center,  least bias,  least bias'],
+        ['left ,        NaN,        NaN,        NaN, least bias, least bias']],
+        [['left-center, left-center, left-center, left-center, left-center, left-center'],
+            ['left-center, left-center, left-center,  least bias, left-center,       left'],
+            ['left-center,  left-center,  left-center,   least bias,  left-center, right-center'],
+            ['left , left-center,         NaN,         NaN, left-center,  least bias'],
+            ['left-center,  least bias, left-center, left-center,       left , left-center'],
+            ['least bias, left-center, left-center,       left ,         NaN, left-center'],
+            ['left-center, left-center, left-center,       left ,  least bias,  least bias']
+        ]],
+        [[['left-center, left-center, left-center, left-center, left-center,       right'],
+            ['least bias, left-center, left-center, left-center, left-center, left-center'],
+            ['least bias, left-center,  least bias,  least bias, left-center,  least bias'],
+            ['least bias, left-center,  least bias, left-center,  least bias,  least bias'],
+            ['least bias, left-center,         NaN,  least bias, left-center,       left'],
+            ['least bias, left-center, left-center, left-center, left-center,         NaN'],
+            ['least bias,  least bias, left-center,  least bias,  least bias,  least bias']], [
+            ['left-center, left-center, left-center, left-center, left-center, left-center'],
+            ['left-center, left-center, left-center,  least bias, left-center, left-center'],
+            ['left-center,  least bias, left-center, left-center, left-center, left-center'],
+            ['left-center, left-center, left-center,       left , left-center, left-center'],
+            ['left-center, left-center,  least bias, left-center,  least bias, left-center'],
+            ['left-center,  least bias, left-center, left-center, left-center, left-center'],
+            ['left-center, left-center, left-center, left-center, left-center, left-center']]],
+        [[['left-center, left-center,         NaN,       right, left-center,       right'],
+            ['left-center,         NaN, left-center,         NaN, left-center,  least bias'],
+            ['left ,       right,         NaN,         NaN, left-center,       right'],
+            ['left-center,         NaN,       right,       left , left-center,       left'],
+            ['left-center,         NaN, left-center, left-center, left-center,         NaN'],
+            ['left , left-center, left-center,         NaN, left-center,         NaN'],
+            ['NaN, left-center, left-center, left-center,         NaN,         NaN']],
+            [['right,       right,       left ,       right, left-center, left-center'],
+                ['right, right-center,        right,        right,          NaN, right-center'],
+                ['right,        right, right-center,        right,        right, right-center'],
+                ['right, right-center,        right,        right,        right, right-center'],
+                ['right, right-center, right-center, right-center,        right,        right'],
+                ['right,        right,        right,        right,        right, right-center'],
+                ['right,         NaN,       right, left-center,       right,       right']]]]
 
-  arrowClick(event) {
-    if (event.currentTarget.id === "forward") {
-      this.setState({
-        current_image_index: Math.min(this.state.current_image_index + 1, this.num_images-1)
-      })
+    num_images = 7
 
-    } else {
-      this.setState({
-        current_image_index: Math.max(this.state.current_image_index - 1, 0)
-      })
+    arrowClick(event) {
+        if (event.currentTarget.id === "forward") {
+            this.setState({
+                current_image_index: Math.min(this.state.current_image_index + 1, this.num_images - 1)
+            })
+
+        } else {
+            this.setState({
+                current_image_index: Math.max(this.state.current_image_index - 1, 0)
+            })
+        }
     }
-  }
 
-  render() {
-        const { classes, theme } = this.props;
+    render() {
+        const {classes, theme} = this.props;
         const image_dir = this.load_image_dir(this.props.column, this.props.index)
-        console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png')
         return (
         <Card className={classes.root} variant="outlined">
           <CardActionArea className={classes.action}>
@@ -125,7 +157,7 @@ class ImageCard extends React.Component {
                   <ArrowRightIcon />
                 </IconButton>
                 <Typography variant="subtitle1" gutterBottom align="justify">
-                {this.pug_captions[this.state.current_image_index]}
+                    {this.captions[this.props.column][this.props.index][this.state.current_image_index]}
                 </Typography>
             </Grid>
             </div>
@@ -135,7 +167,7 @@ class ImageCard extends React.Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(ImageCard);
+export default withStyles(styles, {withTheme: true})(ImageCard);
 
 
 

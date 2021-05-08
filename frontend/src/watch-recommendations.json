@@ -1,1344 +1,1680 @@
 {
    "users": [
       {
+         "column_user_id": 0,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "John King: If Trump loses here, he's done",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "LIVE: Latest News Headlines and Events | ABC News Live ",
-                     "Channels": "abC News"
+                     "Channels": "abC News",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "how joe biden reached victory in the 2020 presidential election",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full interview: edward snowden on trump, privacy, and ",
-                     "Channels": "msnbc"
+                     "Channels": "msnbc",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "steve bridges - as george w. bush with george w. bush",
-                     "Channels": "K&M productions - speakers & shows"
+                     "Channels": "K&M productions - speakers & shows",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "i told you so: trump's former attorney says he warned Giuliani",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "Nbc news "
+                     "Channels": "Nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "the silver bridge diaster",
-                     "Channels": "openlearn from the open university"
+                     "Channels": "openlearn from the open university",
+                     "BiasRating": null
                   },
                   {
                      "Video": "new details emerge about investigation into giuliani",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "Nbc news "
+                     "Channels": "Nbc news ",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "watch: the first 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "Nbc news "
+                     "Channels": "Nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "bush vs. kerry: the second 2004 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "replay: the first 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "bush vs. kerry: the second 2004 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "mccain vs obama: the first 2008 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "in fuLL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "obama vs. romney: the second 2012 presidential election",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch sky news live",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch president obama speak and sing at white house tribute to Ray Charles",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "boeing 737-800 - start and takeoff procedure - santiago de Chile -",
-                     "Channels": "mr fabio"
+                     "Channels": "mr fabio",
+                     "BiasRating": null
                   },
                   {
                      "Video": "bush vs. kerry: the second 2004 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch sky news live",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "rudy indictment?: after feds raid giuliani, legal vet says",
-                     "Channels": "msnbc"
+                     "Channels": "msnbc",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "your mind will collapse if you try to imagine this | Universe SIZE COMPARISON",
-                     "Channels": "estudio arkano"
+                     "Channels": "estudio arkano",
+                     "BiasRating": null
                   },
                   {
                      "Video": "Pilotseye.tv - Lufthansa Airbus A380 - Departure from San Francisco [English Subtitles]",
-                     "Channels": "Aviation World"
+                     "Channels": "Aviation World",
+                     "BiasRating": null
                   },
                   {
                      "Video": "rodney dangerfield almost makes carson fall out of his Chair Laughing",
-                     "Channels": "johnny carson"
+                     "Channels": "johnny carson",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch sky news live",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             }
          ]
       },
       {
+         "column_user_id": 1,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "He predicted a trump win in 2016. what's his forecast for 2020? | NYT opinion",
-                     "Channels": "the new york times"
+                     "Channels": "the new york times",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "John King: If Trump loses here, he's done",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "2020 presidential election results are officially certified",
-                     "Channels": "inside edition"
+                     "Channels": "inside edition",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: election results - pbs newshour special coverage",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "live coverage: joe biden wins presidency, cbs news projects",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "nbc nightly news broadcast (full) ",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "kennedy vs nixon: the first 1960 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Watch Live: President-Elect Joe Biden Addresses The Nation I ABC News",
-                     "Channels": "abC News"
+                     "Channels": "abC News",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Hear what McCarthy said about Liz Cheney on hot mic",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "watch: the first 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: secret service director james Murray testifies on operational priorities",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "the leader of the free world is cognitively delinquent",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "replay: the first 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "first debate cold open - snl",
-                     "Channels": "saturday night live"
+                     "Channels": "saturday night live",
+                     "BiasRating": null
                   },
                   {
                      "Video": "some of the best of walter | jeff dunham",
-                     "Channels": "jeff dunham"
+                     "Channels": "jeff dunham",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch live: secret service director james Murray testifies on operational priorities",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch the fulll, on-camera shouting match between trump, Pelosi and Schumer | The Washington Post ",
-                     "Channels": "washington post "
+                     "Channels": "washington post ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "replay: the 2020 vice presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "trump and biden face off in chaotic first 2020 presidential debate | full debate",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch: the first 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "nbc news now",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump's scared: michael cohen says rudy knows he's In Trouble' And Will Flip On",
-                     "Channels": "msnbc"
+                     "Channels": "msnbc",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "10 funniest auditions ever on britain's got talent",
-                     "Channels": "talent recap uk"
+                     "Channels": "talent recap uk",
+                     "BiasRating": null
                   },
                   {
                      "Video": "Beirut Blast: The explosion that stole a nation's hope | Four Corners",
-                     "Channels": "abc news in depth"
+                     "Channels": "abc news in depth",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "watch live: secret service director james Murray testifies on operational priorities",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "how america reacted when joe biden was elected president",
-                     "Channels": "cbc news"
+                     "Channels": "cbc news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "nbc nightly news broadcast (full) ",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Former Ukraine Advisor To Zelensky Says Giuliani Wanted A Smear Campaign Against Biden | MSNBC",
-                     "Channels": "msnbc "
+                     "Channels": "msnbc ",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "watch sky news live",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             }
          ]
       },
       {
+         "column_user_id": 0,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "2020 presidential election results are officially certified",
-                     "Channels": "inside edition"
+                     "Channels": "inside edition",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Map shows how election results shifted toward Biden",
-                     "Channels": "CNN"
+                     "Channels": "CNN",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "president donald trump attempts to claim election victory as several states still count ballots",
-                     "Channels": "cnbc television"
+                     "Channels": "cnbc television",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "The Funniest Greg Davies' Moments on The Graham Norton Show",
-                     "Channels": "The Graham Norton Show"
+                     "Channels": "The Graham Norton Show",
+                     "BiasRating": null
                   },
                   {
                      "Video": "bombshell report claims teachers union pressured CDC; the five react",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Trey Gowdy predicts Biden will cause Democrats to lose the House",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "15 Times Ryan AND Colin Owned \"Whose Line Is It, Anyway?\"",
-                     "Channels": "Next of Ken"
+                     "Channels": "Next of Ken",
+                     "BiasRating": null
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Whose Line - Best Of Laughter - Part 1 of 3",
-                     "Channels": "WrestlingFanatic08"
+                     "Channels": "WrestlingFanatic08",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "replay: the first 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "Gutfeld: Biden offers message of 'unify then crucify'",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Mary Trump on Her Uncle\u2019s Loss",
-                     "Channels": "katie couric"
+                     "Channels": "katie couric",
+                     "BiasRating": null
                   },
                   {
                      "Video": "axios on hbo: president trump exclusive interview (Full Episode) | HBO",
-                     "Channels": "hbo"
+                     "Channels": "hbo",
+                     "BiasRating": null
                   },
                   {
                      "Video": "live: nbc news now",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trey Gowdy predicts Biden will cause Democrats to lose the House",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "first debate cold open - snl",
-                     "Channels": "saturday night live"
+                     "Channels": "saturday night live",
+                     "BiasRating": null
                   },
                   {
                      "Video": "President Trump goes one-on-one with Chris Wallace | Full Interview",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "replay: the 2020 vice presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "replay: the final 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "watch: the first 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "axios on hbo: president trump exclusive interview (Full Episode) | HBO",
-                     "Channels": "hbo"
+                     "Channels": "hbo",
+                     "BiasRating": null
                   },
                   {
                      "Video": "barack obama: the 2020 60 minutes interview",
-                     "Channels": "60 minutes"
+                     "Channels": "60 minutes",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "final 2020 presidential debate between donald trump, joe biden",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Celebrity Jeopardy! Kathie Lee, Tom Hanks, Sean Connery, Burt Reynolds - SNL",
-                     "Channels": "saturday night live"
+                     "Channels": "saturday night live",
+                     "BiasRating": null
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "replay: the first 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "kennedy vs nixon: the first 1960 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "first debate cold open - snl",
-                     "Channels": "saturday night live"
+                     "Channels": "saturday night live",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "President Obama at the White House Correspondents Dinner | Best Jokes of Obama",
-                     "Channels": "mango news"
+                     "Channels": "mango news",
+                     "BiasRating": null
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "first debate cold open - snl",
-                     "Channels": "saturday night live"
+                     "Channels": "saturday night live",
+                     "BiasRating": null
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "president donald trump: the 60 minutes 2020 election interview",
-                     "Channels": "60 minutes "
+                     "Channels": "60 minutes ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Clarkson's Favourite Rally Battle: 1983 Audi Quattro VS. Lancia 037 | Amazon Prime Video NL",
-                     "Channels": "Amazon Prime Video Nederland"
+                     "Channels": "Amazon Prime Video Nederland",
+                     "BiasRating": null
                   },
                   {
                      "Video": "Launch Control: Climb to the Clouds at Mt. Washington \u2013 Episode 5.07",
-                     "Channels": "subaru"
+                     "Channels": "subaru",
+                     "BiasRating": null
                   }
                ]
             }
          ]
       },
       {
+         "column_user_id": 1,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "2020 presidential election results are officially certified",
-                     "Channels": "inside edition"
+                     "Channels": "inside edition",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Map shows how election results shifted toward Biden",
-                     "Channels": "CNN"
+                     "Channels": "CNN",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "Sen. Tim Scott delivers GOP rebuttal to Biden's remarks | FULL",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Trump on if he's considering a 2024 presidential run | 'Hannity' exclusive",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "john king: If Trump loses here, he's done",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "Gutfeld: Biden offers message of 'unify then crucify'",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "\"Obama out:\" President Barack Obama's hilarious final White House correspondents' dinner speech",
-                     "Channels": "global news"
+                     "Channels": "global news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "Tim Scott joins 'Hannity' to respond to racist attacks on social media",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Romney booed, called a traitor during fiery Utah conference",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "Pete Hegseth responds to Ilhan Omar's tweet about him",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "gutfeld: Biden offers message of 'unify then crucify'",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "China's ISS Competitor Begins Construction In Orbit",
-                     "Channels": "scott manley"
+                     "Channels": "scott manley",
+                     "BiasRating": null
                   },
                   {
                      "Video": "Proud leftist racists resort to \u2018racial slurs\u2019 to attack black Republican senator",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "Washington Post under fire for Tim Scott 'fact-check'",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Tyrus calls out 'casual racism' from left against Tim Scott",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Proud leftist racists resort to \u2018racial slurs\u2019 to attack black Republican senator",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "LAPD officer who penned letter to LeBron slams 'dangerous' police rhetoric",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Caitlyn Jenner says 'California is crumbling' in 'Hannity' exclusive",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Creepy far-left racists showed themselves when Tim Scott didn\u2019t \u2018sing from BLM song sheet\u2019",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "Tim Scott joins 'Hannity' to respond to racist attacks on social media",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Viral Moment: Ted Cruz Confronts Stacey Abrams: \"You Still Refuse To Concede You Lost The Race\"",
-                     "Channels": "forbes breaking news"
+                     "Channels": "forbes breaking news",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "Outnumbered panel reacts to mass exodus of police in liberal cities",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Chauvin alternate juror describes fear among jury",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Trey Gowdy, Kayleigh McEnany rip liberals for attacking Caitlyn Jenner",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Creepy far-left racists showed themselves when Tim Scott didn\u2019t \u2018sing from BLM song sheet\u2019",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "Tyrus calls out 'casual racism' from left against Tim Scott",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "the leader of the free world is cognitively delinquent",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "Proud leftist racists resort to \u2018racial slurs\u2019 to attack black Republican senator",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "Creepy far-left racists showed themselves when Tim Scott didn\u2019t \u2018sing from BLM song sheet\u2019",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   },
                   {
                      "Video": "Black officer destroyed LeBron James' anti-cop narrative: Leo Terrell",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Disable farmer denied aid based on race speaks out on 'Tucker Carlson Tonight'",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "Black Guns Matter founder: Most Americans see the 'fake media' CNN is",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "tyrus: woman who racially berated cop should be ashamed",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "desantis hits ocasio-cortez: i don't care if she's an eskimo",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "LAPD officer who penned letter to LeBron slams 'dangerous' police rhetoric",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "tim scott fires back at msnbc host's disparaging comments",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "this is the most important trump story you never heard",
-                     "Channels": "sky news australia"
+                     "Channels": "sky news australia",
+                     "BiasRating": "right-center"
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "candace owens on blm co-founder's million dollar home",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "Dogfights: F-86 Sabres Battle at Extreme Speeds in the Korean War | Full Episode | History",
-                     "Channels": "history"
+                     "Channels": "history",
+                     "BiasRating": null
                   },
                   {
                      "Video": "Pete Hegseth responds to Ilhan Omar's tweet about him",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "fremont police release body cam video of deadly gunfight",
-                     "Channels": "mercury news"
+                     "Channels": "mercury news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "desantis hits ocasio-cortez: i don't care if she's an eskimo",
-                     "Channels": "fox news"
+                     "Channels": "fox news",
+                     "BiasRating": "right"
                   },
                   {
                      "Video": "caityln jenner rips newsom's response to covid",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   }
                ]
             }
          ]
       },
       {
+         "column_user_id": 0,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "LIVE: Latest News Headlines and Events | ABC News Live ",
-                     "Channels": "ABC News"
+                     "Channels": "ABC News",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "John King: If Trump loses here, he's done",
-                     "Channels": "CNN"
+                     "Channels": "CNN",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "president donald trump attempts to claim election victory as several states still count ballots",
-                     "Channels": "cnbc television"
+                     "Channels": "cnbc television",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "after serving 68 years in pennslyvania prison, Joe Ligon returns to modern world he barely knows",
-                     "Channels": "cbs this morning "
+                     "Channels": "cbs this morning ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "bombshell report claims teachers union pressured CDC; the five react",
-                     "Channels": "fox news "
+                     "Channels": "fox news ",
+                     "BiasRating": "right"
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "live: nbc news now - May 5",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "what's driving california's mass exodus?",
-                     "Channels": "cnbc"
+                     "Channels": "cnbc",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky news"
+                     "Channels": "sky news",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "president obama remembers biggest disappointment As President | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "first 2020 presidential debate between donald trump and joe biden",
-                     "Channels": "c-span"
+                     "Channels": "c-span",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "IN FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: the final presidential debate",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "second 2020 presidential debate between donald trump and joe biden",
-                     "Channels": "c-span"
+                     "Channels": "c-span",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch: trump's full 2019 state of the union address",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "in FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: latest covid-19 data from uk and around the world",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "first 2020 presidential debate between donald trump and joe biden",
-                     "Channels": "c-span"
+                     "Channels": "c-span",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "mccain vs obama: the second 2008 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "axios on hbo: president trump exclusive interview (Full Episode) | HBO",
-                     "Channels": "hbo"
+                     "Channels": "hbo",
+                     "BiasRating": null
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: the 2nd presidential debate",
-                     "Channels": "cbs news "
+                     "Channels": "cbs news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump's scared: michael cohen says rudy knows he's In Trouble' And Will Flip On Trump",
-                     "Channels": "msnbc"
+                     "Channels": "msnbc",
+                     "BiasRating": "left "
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "kennedy vs nixon: the first 1960 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump roasts clinton at ai smith charity dinner",
-                     "Channels": "cbs news "
+                     "Channels": "cbs news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch the fulll, on-camera shouting match between trump, Pelosi and Schumer | The Washington Post ",
-                     "Channels": "washington post "
+                     "Channels": "washington post ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "axios on hbo: president trump exclusive interview (Full Episode) | HBO",
-                     "Channels": "hbo"
+                     "Channels": "hbo",
+                     "BiasRating": null
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "IN FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "Trump v Biden: The final debate ",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "trump roasts clinton at ai smith charity dinner",
-                     "Channels": "cbs news "
+                     "Channels": "cbs news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "second 2020 presidential debate between donald trump and joe biden",
-                     "Channels": "c-span"
+                     "Channels": "c-span",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: track the impact of global warming on the world",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "watch live: latest covid-19 data from uk and around the world",
-                     "Channels": "Sky News"
+                     "Channels": "Sky News",
+                     "BiasRating": "least bias"
                   }
                ]
             }
          ]
       },
       {
+         "column_user_id": 1,
          "rounds": [
             {
+               "round_id": 0,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "Election Results 2020: Last Week Tonight with John Oliver (HBO)",
-                     "Channels": "LastWeekTonight"
+                     "Channels": "LastWeekTonight",
+                     "BiasRating": null
                   },
                   {
                      "Video": "John King: If Trump loses here, he's done",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "2020 presidential election results are officially certified",
-                     "Channels": "inside edition"
+                     "Channels": "inside edition",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 1,
                "videos": [
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: election results - pbs newshour special coverage",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "live coverage: joe biden wins presidency, cbs news projects",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "full interview: rosalind brewer, ceo of walgreens Boots Alliance | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 2,
                "videos": [
                   {
                      "Video": "trump and biden face off in chaotic first 2020 presidential debate | full debate",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "2020 Election Results and Analysis | TODAY",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: today all day | the best of today news",
-                     "Channels": "TODAY"
+                     "Channels": "TODAY",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 3,
                "videos": [
                   {
                      "Video": "watch: the first 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "trump and biden face off in final 2020 presidential debate",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: trump's full 2019 state of the union address",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "live coverage: joe biden wins presidency, cbs news projects",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 4,
                "videos": [
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "kennedy vs nixon: the first 1960 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "the third presidential debate: hillary clinton and donal trump (Full Debate) | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "replay: the first 2020 presidential debate on CNN",
-                     "Channels": "cnn"
+                     "Channels": "cnn",
+                     "BiasRating": "left "
                   },
                   {
                      "Video": "mccain vs obama: the first 2008 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "obama vs. romney: the first 2012 presidential election",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 5,
                "videos": [
                   {
                      "Video": "watch: the full 2020 vice presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "the third presidential debate: hillary clinton and donal trump (Full Debate) | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "first 2020 presidential debate between donald trump and joe biden",
-                     "Channels": "c-span"
+                     "Channels": "c-span",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump v biden: the final debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "clinton vs. dole: the first 1996 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 6,
                "videos": [
                   {
                      "Video": "watch full 2020 vp debate: mike pence, kamala harris face off in Utah",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch in full: trump versus biden in the first us presidential election debate",
-                     "Channels": "sky News"
+                     "Channels": "sky News",
+                     "BiasRating": "least bias"
                   },
                   {
                      "Video": "trump delivers 2019 state of the union address",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "bush vs. gore: the first 2000 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch live: sackler family members who own purdue testify before Congress",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "the vice-presidential debate: tim kaine and mike pence (full debate) | NBC News",
-                     "Channels": "nbc news "
+                     "Channels": "nbc news ",
+                     "BiasRating": "left-center"
                   }
                ]
             },
             {
+               "round_id": 7,
                "videos": [
                   {
                      "Video": "first presidential debate of 2020 election | NBC News NOW",
-                     "Channels": "Nbc news "
+                     "Channels": "Nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: 2020 vice presidential debate between mike pence, Kamala Harris | NBC News NOW",
-                     "Channels": "Nbc news "
+                     "Channels": "Nbc news ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger",
-                     "Channels": "yahoo finance "
+                     "Channels": "yahoo finance ",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "watch: the second and final 2020 presidential debate",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "trump and biden face off in final 2020 presidential debate",
-                     "Channels": "cbs news"
+                     "Channels": "cbs news",
+                     "BiasRating": "left-center"
                   },
                   {
                      "Video": "china: power and prosperity -- watch the full documentary",
-                     "Channels": "pbs newshour"
+                     "Channels": "pbs newshour",
+                     "BiasRating": "left-center"
                   }
                ]
             }

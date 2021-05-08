@@ -1,0 +1,330 @@
+Column,UserID,User,Type,Screenshot,Order,Video,Channels,Verified ,Bias Rating,Factual,MBFC Credibility Rating
+1,0,Cole,Control,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,0,Cole,Control,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+1,0,Cole,Control,Search,3,LIVE: Latest News Headlines and Events | ABC News Live ,ABC News,,left-center,high,high
+1,0,Cole,Control,Search,4,"John King: If Trump loses here, he's done",CNN,,left ,mixed,medium
+1,0,Cole,Control,Search,5,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,0,Cole,Control,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,0,Cole,Control,R1,2,president donald trump attempts to claim election victory as several states still count ballots,cnbc television,,left-center,mostly factual,
+1,0,Cole,Control,R1,3,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,0,Cole,Control,R1,4,"after serving 68 years in pennslyvania prison, Joe Ligon returns to modern world he barely knows",cbs this morning ,,left-center,high,high
+1,0,Cole,Control,R1,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+1,0,Cole,Control,R1,6,bombshell report claims teachers union pressured CDC; the five react,fox news ,,right,mixed,medium
+1,0,Cole,Control,R2,1,trump v biden: the final debate,sky news,,least bias,high,high
+1,0,Cole,Control,R2,2,live: nbc news now - May 5,nbc news ,,left-center,high,high
+1,0,Cole,Control,R2,3,what's driving california's mass exodus?,cnbc,,left-center,mostly factual,
+1,0,Cole,Control,R2,4,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,0,Cole,Control,R2,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+1,0,Cole,Control,R2,6,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+1,0,Cole,Control,R3,1,watch in full: trump versus biden in the first us presidential election debate,sky news,,least bias,high,high
+1,0,Cole,Control,R3,2,president obama remembers biggest disappointment As President | NBC News,nbc news ,,left-center,high,high
+1,0,Cole,Control,R3,3,first 2020 presidential debate between donald trump and joe biden,c-span,,least bias,very high,high
+1,0,Cole,Control,R3,4,IN FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate,Sky News,,least bias,high,high 
+1,0,Cole,Control,R3,5,watch live: the final presidential debate,cbs news,,left-center,high,high 
+1,0,Cole,Control,R3,6,watch live: track the impact of global warming on the world,Sky News,,least bias,high,high 
+1,0,Cole,Control,R4,1,second 2020 presidential debate between donald trump and joe biden,c-span,,least bias,very high,high
+1,0,Cole,Control,R4,2,watch: trump's full 2019 state of the union address,pbs newshour,,left-center,high,high
+1,0,Cole,Control,R4,3,in FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate,Sky News,,least bias,high,high
+1,0,Cole,Control,R4,4,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+1,0,Cole,Control,R4,5,watch live: track the impact of global warming on the world,Sky News,,least bias,high,high 
+1,0,Cole,Control,R4,6,watch live: latest covid-19 data from uk and around the world,Sky News,,least bias,high,high 
+1,0,Cole,Control,R5,1,first 2020 presidential debate between donald trump and joe biden,c-span,,least bias,very high,high
+1,0,Cole,Control,R5,2,mccain vs obama: the second 2008 presidential debate,pbs newshour,,left-center,high,high
+1,0,Cole,Control,R5,3,axios on hbo: president trump exclusive interview (Full Episode) | HBO,hbo,,,,
+1,0,Cole,Control,R5,4,trump v biden: the final debate,Sky News,,least bias,high,high 
+1,0,Cole,Control,R5,5,watch live: the 2nd presidential debate,cbs news ,,left-center,high,high 
+1,0,Cole,Control,R5,6,trump's scared: michael cohen says rudy knows he's In Trouble' And Will Flip On Trump,msnbc,,left ,mixed,medium
+1,0,Cole,Control,R6,1,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high
+1,0,Cole,Control,R6,2,kennedy vs nixon: the first 1960 presidential debate,pbs newshour,,left-center,high,high
+1,0,Cole,Control,R6,3,trump roasts clinton at ai smith charity dinner,cbs news ,,left-center,high,high
+1,0,Cole,Control,R6,4,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+1,0,Cole,Control,R6,5,"watch the fulll, on-camera shouting match between trump, Pelosi and Schumer | The Washington Post ",washington post ,,left-center,mostly factual,high
+1,0,Cole,Control,R6,6,axios on hbo: president trump exclusive interview (Full Episode) | HBO,hbo,,,,
+1,0,Cole,Control,R7,1,IN FULL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate,Sky News,,least bias,high,high 
+1,0,Cole,Control,R7,2,Trump v Biden: The final debate ,Sky News,,least bias,high,high 
+1,0,Cole,Control,R7,3,trump roasts clinton at ai smith charity dinner,cbs news ,,left-center,high,high 
+1,0,Cole,Control,R7,4,second 2020 presidential debate between donald trump and joe biden,c-span,,least bias,very high,high
+1,0,Cole,Control,R7,5,watch live: track the impact of global warming on the world,Sky News,,least bias,high,high 
+1,0,Cole,Control,R7,6,watch live: latest covid-19 data from uk and around the world,Sky News,,least bias,high,high 
+1,1,Jaeden,Control,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+1,1,Jaeden,Control,Search,3,"John King: If Trump loses here, he's done",cnn,,left ,mixed,medium
+1,1,Jaeden,Control,Search,4,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,Search,5,2020 presidential election results are officially certified,inside edition,,left-center,high,
+1,1,Jaeden,Control,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,R1,2,watch: election results - pbs newshour special coverage,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R1,3,"live coverage: joe biden wins presidency, cbs news projects",cbs news,,left-center,high,high
+1,1,Jaeden,Control,R1,4,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,1,Jaeden,Control,R1,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,R1,6,"full interview: rosalind brewer, ceo of walgreens Boots Alliance | TODAY",TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,R2,1,trump and biden face off in chaotic first 2020 presidential debate | full debate,cbs news,,left-center,high,high
+1,1,Jaeden,Control,R2,2,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,R2,3,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R2,4,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high
+1,1,Jaeden,Control,R2,5,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,1,Jaeden,Control,R2,6,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+1,1,Jaeden,Control,R3,1,watch: the first 2020 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R3,2,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high 
+1,1,Jaeden,Control,R3,3,trump and biden face off in final 2020 presidential debate,cbs news,,left-center,high,high 
+1,1,Jaeden,Control,R3,4,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,1,Jaeden,Control,R3,5,watch: trump's full 2019 state of the union address,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R3,6,"live coverage: joe biden wins presidency, cbs news projects",cbs news,,left-center,high,high
+1,1,Jaeden,Control,R4,1,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R4,2,kennedy vs nixon: the first 1960 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R4,3,the third presidential debate: hillary clinton and donal trump (Full Debate) | NBC News,nbc news ,,left-center,high,high
+1,1,Jaeden,Control,R4,4,replay: the first 2020 presidential debate on CNN,cnn,,left ,mixed,medium
+1,1,Jaeden,Control,R4,5,mccain vs obama: the first 2008 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R4,6,obama vs. romney: the first 2012 presidential election,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R5,1,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R5,2,the third presidential debate: hillary clinton and donal trump (Full Debate) | NBC News,nbc news ,,left-center,high,high
+1,1,Jaeden,Control,R5,3,first 2020 presidential debate between donald trump and joe biden,c-span,,least bias,very high,high
+1,1,Jaeden,Control,R5,4,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,1,Jaeden,Control,R5,5,trump v biden: the final debate,sky News,,least bias,high,high
+1,1,Jaeden,Control,R5,6,clinton vs. dole: the first 1996 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R6,1,"watch full 2020 vp debate: mike pence, kamala harris face off in Utah",cbs news,,left-center,high,high 
+1,1,Jaeden,Control,R6,2,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high 
+1,1,Jaeden,Control,R6,3,trump delivers 2019 state of the union address,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R6,4,bush vs. gore: the first 2000 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R6,5,watch live: sackler family members who own purdue testify before Congress,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R6,6,the vice-presidential debate: tim kaine and mike pence (full debate) | NBC News,nbc news ,,left-center,high,high
+1,1,Jaeden,Control,R7,1,first presidential debate of 2020 election | NBC News NOW,Nbc news ,,left-center,high,high
+1,1,Jaeden,Control,R7,2,"watch: 2020 vice presidential debate between mike pence, Kamala Harris | NBC News NOW",Nbc news ,,left-center,high,high
+1,1,Jaeden,Control,R7,3,berkshire hathaway annual shareholders meeting 2021 featuring Warren Buffett and Charlie Munger,yahoo finance ,,left-center,high,high
+1,1,Jaeden,Control,R7,4,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+1,1,Jaeden,Control,R7,5,trump and biden face off in final 2020 presidential debate,cbs news,,left-center,high,high
+1,1,Jaeden,Control,R7,6,china: power and prosperity -- watch the full documentary,pbs newshour,,left-center,high,high
+,,No Account ,Control,Search,1,election 2020 results and analysis,cbs news,,left-center,high,high
+,,No Account ,Control,Search,2,election results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,Search,3,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+,,No Account ,Control,Search,4,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+,,No Account ,Control,Search,5,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+,,No Account ,Control,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+,,No Account ,Control,R1,2,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,Nbc news ,,left-center,high,high
+,,No Account ,Control,R1,3,"relaxing jazz music & coffee shop music ambience w/ Background Music for Stress Relief, Study, Work",coffee shop ambience ,0,,,
+,,No Account ,Control,R1,4,Rainy Jazz with Relaxing Jazz Music | Coffee Shop Music Ambience and Rain Sounds,coffee shop ambience ,0,,,
+,,No Account ,Control,R1,5,cnbc host reveals why he left fox news,cnn,,left ,mixed,medium
+,,No Account ,Control,R1,6,history of the center of the universe - solar system,touch your heart,0,,,
+,,No Account ,Control,R2,1,covid vaccine: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R2,2,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,Nbc news ,,left-center,high,high
+,,No Account ,Control,R2,3,investigating the impact of osama bin laden's death had on US Navy SEALS,cbs news,,left-center,high,high
+,,No Account ,Control,R2,4,secretary of state antony blinken: the 60 minutes interview,60 minutes ,,left-center,high,high
+,,No Account ,Control,R2,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+,,No Account ,Control,R2,6,i told you so: trump's former attorney says he warned Giuliani,cnn,,left ,mixed,medium
+,,No Account ,Control,R3,1,tucker carlson: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R3,2,john oliver takes the colbert questionert,the late show with stephen colbert ,,,,
+,,No Account ,Control,R3,3,new rule: crypto mania! | real time with bill maher (HBO_,real time with bill maher,,,,
+,,No Account ,Control,R3,4,bankruptcy: last week tonight with john oliver (HBO),hbo,,,,
+,,No Account ,Control,R3,5,secretary of state antony blinken: the 60 minutes interview,60 minutes,,left-center,high,high
+,,No Account ,Control,R3,6,nbc nightly news broadcast (full) ,Nbc news ,,left-center,high,high
+,,No Account ,Control,R4,1,the national debt: last week tonight with john oliver (HBo),LastWeekTonight,,,,
+,,No Account ,Control,R4,2,joe arpaio: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R4,3,covid vaccine: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R4,4,psychics: last week tonight with John oliver (hbo),LastWeekTonight,,,,
+,,No Account ,Control,R4,5,john oliver takes the colbert questionert,the late show with stephen colbert ,,,,
+,,No Account ,Control,R4,6,north korea: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,1,bankruptcy: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,2,long-term care: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,3,unemployment: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,4,legal immigration: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,5,facial recognition: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R5,6,equal rights amendment: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R6,1,border wall II: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R6,2,covid vaccine: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R6,3,republicans lash out at liz cheney for not supporting,late night with seth meyers ,,,,
+,,No Account ,Control,R6,4,long-term care: : last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R6,5,gop and fox news spread an insane new lie about biden Banning Meat: A Closer Look,late night with seth meyers ,,,,
+,,No Account ,Control,R6,6,sheriffs: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R7,1,juries: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R7,2,border wall: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R7,3,election results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R7,4,border patrol: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+,,No Account ,Control,R7,5,"one of trump's biggest scams the foxconn deal, falls apart: A Closer Look",late night with seth meyers ,,,,
+,,No Account ,Control,R7,6,stupid watergate: last week tonight with john oliver (HBO),LastWeekTonight,,,,
+0,0,Benje,Left,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+0,0,Benje,Left,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+0,0,Benje,Left,Search,3,"John King: If Trump loses here, he's done",cnn,,left ,mixed,medium
+0,0,Benje,Left,Search,4,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+0,0,Benje,Left,Search,5,LIVE: Latest News Headlines and Events | ABC News Live ,abC News,,left-center,high,high
+0,0,Benje,Left,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+0,0,Benje,Left,R1,2,how joe biden reached victory in the 2020 presidential election,cbs news,,left-center,high,high
+0,0,Benje,Left,R1,3,"full interview: edward snowden on trump, privacy, and ",msnbc,,left ,mixed,medium
+0,0,Benje,Left,R1,4,steve bridges - as george w. bush with george w. bush,K&M productions - speakers & shows,no,,,
+0,0,Benje,Left,R1,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+0,0,Benje,Left,R1,6,i told you so: trump's former attorney says he warned Giuliani,cnn,,left ,mixed,medium
+0,0,Benje,Left,R2,1,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R2,2,"final 2020 presidential debate between donald trump, joe biden",Nbc news ,,left-center,high,high
+0,0,Benje,Left,R2,3,the silver bridge diaster,openlearn from the open university,,,,
+0,0,Benje,Left,R2,4,new details emerge about investigation into giuliani,cnn,,left ,mixed,medium
+0,0,Benje,Left,R2,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+0,0,Benje,Left,R2,6,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,Nbc news ,,left-center,high,high
+0,0,Benje,Left,R3,1,watch: the first 2020 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R3,2,"final 2020 presidential debate between donald trump, joe biden",Nbc news ,,left-center,high,high
+0,0,Benje,Left,R3,3,bush vs. kerry: the second 2004 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R3,4,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R3,5,trump v biden: the final debate,sky News,,least bias,high,high 
+0,0,Benje,Left,R3,6,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high 
+0,0,Benje,Left,R4,1,watch in full: trump versus biden in the first us presidential election debate,sky News,,least bias,high,high 
+0,0,Benje,Left,R4,2,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R4,3,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R4,4,replay: the first 2020 presidential debate on CNN,cnn,,left ,mixed,medium
+0,0,Benje,Left,R4,5,bush vs. kerry: the second 2004 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R4,6,mccain vs obama: the first 2008 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R5,1,trump v biden: the final debate,sky News,,least bias,high,high credibility 
+0,0,Benje,Left,R5,2,in fuLL: Kamala Harris versus Mike Pence in the only Vice Presidential Debate,sky News,,least bias,high,high credibility 
+0,0,Benje,Left,R5,3,obama vs. romney: the second 2012 presidential election,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R5,4,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+0,0,Benje,Left,R5,5,watch sky news live,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R5,6,watch live: track the impact of global warming on the world,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R6,1,watch in full: trump versus biden in the first us presidential election debate,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R6,2,watch president obama speak and sing at white house tribute to Ray Charles,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R6,3,boeing 737-800 - start and takeoff procedure - santiago de Chile -,mr fabio,0,,,
+0,0,Benje,Left,R6,4,bush vs. kerry: the second 2004 presidential debate,pbs newshour,,left-center,high,high
+0,0,Benje,Left,R6,5,watch sky news live,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R6,6,watch live: track the impact of global warming on the world,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R7,1,"rudy indictment?: after feds raid giuliani, legal vet says",msnbc,,left ,mixed,medium
+0,0,Benje,Left,R7,2,your mind will collapse if you try to imagine this | Universe SIZE COMPARISON,estudio arkano,0,,,
+0,0,Benje,Left,R7,3,Pilotseye.tv - Lufthansa Airbus A380 - Departure from San Francisco [English Subtitles],Aviation World,0,,,
+0,0,Benje,Left,R7,4,rodney dangerfield almost makes carson fall out of his Chair Laughing,johnny carson,,,,
+0,0,Benje,Left,R7,5,watch sky news live,sky news,,least bias,high,high credibility 
+0,0,Benje,Left,R7,6,watch live: track the impact of global warming on the world,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+0,1,Candice,Left,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+0,1,Candice,Left,Search,3,He predicted a trump win in 2016. what's his forecast for 2020? | NYT opinion,the new york times,,left-center,high,high
+0,1,Candice,Left,Search,4,"John King: If Trump loses here, he's done",cnn,,left ,mixed,medium credibility
+0,1,Candice,Left,Search,5,2020 presidential election results are officially certified,inside edition,,left-center,high,
+0,1,Candice,Left,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+0,1,Candice,Left,R1,2,watch: election results - pbs newshour special coverage,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R1,3,"live coverage: joe biden wins presidency, cbs news projects",cbs news,,left-center,high,high
+0,1,Candice,Left,R1,4,nbc nightly news broadcast (full) ,nbc news ,,left-center,high,high
+0,1,Candice,Left,R1,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+0,1,Candice,Left,R1,6,kennedy vs nixon: the first 1960 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R2,1,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R2,2,Watch Live: President-Elect Joe Biden Addresses The Nation I ABC News,abC News,,left-center,high,high credibility
+0,1,Candice,Left,R2,3,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+0,1,Candice,Left,R2,4,trump v biden: the final debate,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R2,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+0,1,Candice,Left,R2,6,Hear what McCarthy said about Liz Cheney on hot mic,cnn,,left ,mixed,medium credibility
+0,1,Candice,Left,R3,1,watch: the first 2020 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R3,2,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R3,3,"final 2020 presidential debate between donald trump, joe biden",nbc news ,,left-center,high,high
+0,1,Candice,Left,R3,4,trump v biden: the final debate,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R3,5,watch live: secret service director james Murray testifies on operational priorities,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R3,6,the leader of the free world is cognitively delinquent,sky news australia,,right-center,mixed,medium
+0,1,Candice,Left,R4,1,replay: the first 2020 presidential debate on CNN,cnn,,left ,mixed,medium credibility
+0,1,Candice,Left,R4,2,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R4,3,first debate cold open - snl,saturday night live,,,,
+0,1,Candice,Left,R4,4,some of the best of walter | jeff dunham,jeff dunham,,,,
+0,1,Candice,Left,R4,5,watch live: secret service director james Murray testifies on operational priorities,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R4,6,watch in full: trump versus biden in the first us presidential election debate,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R5,1,"final 2020 presidential debate between donald trump, joe biden",nbc news ,,left-center,high,high
+0,1,Candice,Left,R5,2,trump v biden: the final debate,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R5,3,"watch the fulll, on-camera shouting match between trump, Pelosi and Schumer | The Washington Post ",washington post ,,left-center,mostly factual,high
+0,1,Candice,Left,R5,4,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R5,5,replay: the 2020 vice presidential debate on CNN,cnn,,left ,mixed,medium credibility
+0,1,Candice,Left,R5,6,trump and biden face off in chaotic first 2020 presidential debate | full debate,cbs news,,left-center,high,high
+0,1,Candice,Left,R6,1,watch in full: trump versus biden in the first us presidential election debate,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R6,2,watch: the first 2020 presidential debate,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R6,3,nbc news now,nbc news ,,left-center,high,high
+0,1,Candice,Left,R6,4,trump's scared: michael cohen says rudy knows he's In Trouble' And Will Flip On,msnbc,,left ,mixed,medium
+0,1,Candice,Left,R6,5,10 funniest auditions ever on britain's got talent,talent recap uk,0,,,
+0,1,Candice,Left,R6,6,Beirut Blast: The explosion that stole a nation's hope | Four Corners,abc news in depth,,left-center,high,high credibility
+0,1,Candice,Left,R7,1,watch live: secret service director james Murray testifies on operational priorities,pbs newshour,,left-center,high,high
+0,1,Candice,Left,R7,2,how america reacted when joe biden was elected president,cbc news,,left-center,high,high
+0,1,Candice,Left,R7,3,nbc nightly news broadcast (full) ,nbc news ,,left-center,high,high
+0,1,Candice,Left,R7,4,Former Ukraine Advisor To Zelensky Says Giuliani Wanted A Smear Campaign Against Biden | MSNBC,msnbc ,,left ,mixed,medium
+0,1,Candice,Left,R7,5,watch sky news live,sky news,,least bias,high,high credibility 
+0,1,Candice,Left,R7,6,watch live: track the impact of global warming on the world,sky news,,least bias,high,high credibility 
+2,0,Derren,Right ,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+2,0,Derren,Right ,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+2,0,Derren,Right ,Search,3,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+2,0,Derren,Right ,Search,4,2020 presidential election results are officially certified,inside edition,,left-center,high,
+2,0,Derren,Right ,Search,5,Map shows how election results shifted toward Biden,CNN,,left ,mixed,medium credibility
+2,0,Derren,Right ,R1,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+2,0,Derren,Right ,R1,2,president donald trump attempts to claim election victory as several states still count ballots,cnbc television,,left-center,mostly factual,
+2,0,Derren,Right ,R1,3,The Funniest Greg Davies' Moments on The Graham Norton Show,The Graham Norton Show,,,,
+2,0,Derren,Right ,R1,4,bombshell report claims teachers union pressured CDC; the five react,fox news ,,right,mixed,medium credibility
+2,0,Derren,Right ,R1,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+2,0,Derren,Right ,R1,6,Trey Gowdy predicts Biden will cause Democrats to lose the House,fox news ,,right,mixed,medium credibility
+2,0,Derren,Right ,R2,1,"final 2020 presidential debate between donald trump, joe biden",nbc news ,,left-center,high,high
+2,0,Derren,Right ,R2,2,"15 Times Ryan AND Colin Owned ""Whose Line Is It, Anyway?""",Next of Ken,,,,
+2,0,Derren,Right ,R2,3,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+2,0,Derren,Right ,R2,4,Whose Line - Best Of Laughter - Part 1 of 3,WrestlingFanatic08,0,,,
+2,0,Derren,Right ,R2,5,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+2,0,Derren,Right ,R2,6,watch in full: trump versus biden in the first us presidential election debate,sky news,,least bias,high,high credibility 
+2,0,Derren,Right ,R3,1,replay: the first 2020 presidential debate on CNN,cnn,,left ,mixed,medium credibility
+2,0,Derren,Right ,R3,2,Gutfeld: Biden offers message of 'unify then crucify',fox news ,,right,mixed,medium credibility
+2,0,Derren,Right ,R3,3,Mary Trump on Her Uncle’s Loss,katie couric,,,,
+2,0,Derren,Right ,R3,4,axios on hbo: president trump exclusive interview (Full Episode) | HBO,hbo,,,,
+2,0,Derren,Right ,R3,5,live: nbc news now,nbc news ,,left-center,high,high
+2,0,Derren,Right ,R3,6,trey Gowdy predicts Biden will cause Democrats to lose the House,fox news ,,right,mixed,medium credibility
+2,0,Derren,Right ,R4,1,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R4,2,first debate cold open - snl,saturday night live,,,,
+2,0,Derren,Right ,R4,3,President Trump goes one-on-one with Chris Wallace | Full Interview,fox news ,,right,mixed,medium credibility
+2,0,Derren,Right ,R4,4,replay: the 2020 vice presidential debate on CNN,cnn,,left ,mixed,medium credibility
+2,0,Derren,Right ,R4,5,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+2,0,Derren,Right ,R4,6,replay: the final 2020 presidential debate on CNN,cnn,,left ,mixed,medium credibility
+2,0,Derren,Right ,R5,1,watch: the first 2020 presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R5,2,axios on hbo: president trump exclusive interview (Full Episode) | HBO,hbo,,,,
+2,0,Derren,Right ,R5,3,barack obama: the 2020 60 minutes interview,60 minutes,,left-center,high,high
+2,0,Derren,Right ,R5,4,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R5,5,"final 2020 presidential debate between donald trump, joe biden",nbc news ,,left-center,high,high
+2,0,Derren,Right ,R5,6,"Celebrity Jeopardy! Kathie Lee, Tom Hanks, Sean Connery, Burt Reynolds - SNL",saturday night live,,,,
+2,0,Derren,Right ,R6,1,replay: the first 2020 presidential debate on CNN,cnn,,left ,mixed,medium credibility
+2,0,Derren,Right ,R6,2,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R6,3,kennedy vs nixon: the first 1960 presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R6,4,first debate cold open - snl,saturday night live,,,,
+2,0,Derren,Right ,R6,5,watch: the full 2020 vice presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R6,6,President Obama at the White House Correspondents Dinner | Best Jokes of Obama,mango news,,,,
+2,0,Derren,Right ,R7,1,first debate cold open - snl,saturday night live,,,,
+2,0,Derren,Right ,R7,2,watch: the second and final 2020 presidential debate,pbs newshour,,left-center,high,high
+2,0,Derren,Right ,R7,3,full phone call: trump pressures georgia secretary of State To Recount Election Votes | NBC News,nbc news ,,left-center,high,high
+2,0,Derren,Right ,R7,4,president donald trump: the 60 minutes 2020 election interview,60 minutes ,,left-center,high,high
+2,0,Derren,Right ,R7,5,Clarkson's Favourite Rally Battle: 1983 Audi Quattro VS. Lancia 037 | Amazon Prime Video NL,Amazon Prime Video Nederland,,,,
+2,0,Derren,Right ,R7,6,Launch Control: Climb to the Clouds at Mt. Washington – Episode 5.07,subaru,0,,,
+2,1,Dongxue,Right ,Search,1,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+2,1,Dongxue,Right ,Search,2,Election Results 2020: Last Week Tonight with John Oliver (HBO),LastWeekTonight,,,,
+2,1,Dongxue,Right ,Search,3,2020 Election Results and Analysis | TODAY,TODAY,,left-center,mostly factual,
+2,1,Dongxue,Right ,Search,4,2020 presidential election results are officially certified,inside edition,,left-center,high,
+2,1,Dongxue,Right ,Search,5,Map shows how election results shifted toward Biden,CNN,,left ,mixed,medium credibility
+2,1,Dongxue,Right ,R1,1,Sen. Tim Scott delivers GOP rebuttal to Biden's remarks | FULL,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R1,2,Trump on if he's considering a 2024 presidential run | 'Hannity' exclusive,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R1,3,"john king: If Trump loses here, he's done",cnn,,left ,mixed,medium credibility
+2,1,Dongxue,Right ,R1,4,Gutfeld: Biden offers message of 'unify then crucify',fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R1,5,"""Obama out:"" President Barack Obama's hilarious final White House correspondents' dinner speech",global news,,left-center,high,high
+2,1,Dongxue,Right ,R1,6,watch: today all day | the best of today news,TODAY,,left-center,mostly factual,
+2,1,Dongxue,Right ,R2,1,Tim Scott joins 'Hannity' to respond to racist attacks on social media,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R2,2,"Romney booed, called a traitor during fiery Utah conference",sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R2,3,Pete Hegseth responds to Ilhan Omar's tweet about him,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R2,4,gutfeld: Biden offers message of 'unify then crucify',fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R2,5,China's ISS Competitor Begins Construction In Orbit,scott manley,,,,
+2,1,Dongxue,Right ,R2,6,Proud leftist racists resort to ‘racial slurs’ to attack black Republican senator,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R3,1,Washington Post under fire for Tim Scott 'fact-check',fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R3,2,Tyrus calls out 'casual racism' from left against Tim Scott,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R3,3,Proud leftist racists resort to ‘racial slurs’ to attack black Republican senator,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R3,4,LAPD officer who penned letter to LeBron slams 'dangerous' police rhetoric,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R3,5,Caitlyn Jenner says 'California is crumbling' in 'Hannity' exclusive,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R3,6,Creepy far-left racists showed themselves when Tim Scott didn’t ‘sing from BLM song sheet’,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R4,1,Tim Scott joins 'Hannity' to respond to racist attacks on social media,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R4,2,"Viral Moment: Ted Cruz Confronts Stacey Abrams: ""You Still Refuse To Concede You Lost The Race""",forbes breaking news,,right-center,mostly factual,high
+2,1,Dongxue,Right ,R4,3,Outnumbered panel reacts to mass exodus of police in liberal cities,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R4,4,Chauvin alternate juror describes fear among jury,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R4,5,"Trey Gowdy, Kayleigh McEnany rip liberals for attacking Caitlyn Jenner",fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R4,6,Creepy far-left racists showed themselves when Tim Scott didn’t ‘sing from BLM song sheet’,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R5,1,Tyrus calls out 'casual racism' from left against Tim Scott,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R5,2,the leader of the free world is cognitively delinquent,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R5,3,Proud leftist racists resort to ‘racial slurs’ to attack black Republican senator,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R5,4,Creepy far-left racists showed themselves when Tim Scott didn’t ‘sing from BLM song sheet’,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R5,5,Black officer destroyed LeBron James' anti-cop narrative: Leo Terrell,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R5,6,Disable farmer denied aid based on race speaks out on 'Tucker Carlson Tonight',fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,1,Black Guns Matter founder: Most Americans see the 'fake media' CNN is,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,2,tyrus: woman who racially berated cop should be ashamed,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,3,desantis hits ocasio-cortez: i don't care if she's an eskimo,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,4,LAPD officer who penned letter to LeBron slams 'dangerous' police rhetoric,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,5,tim scott fires back at msnbc host's disparaging comments,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R6,6,this is the most important trump story you never heard,sky news australia,,right-center,mixed,medium
+2,1,Dongxue,Right ,R7,1,candace owens on blm co-founder's million dollar home,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R7,2,Dogfights: F-86 Sabres Battle at Extreme Speeds in the Korean War | Full Episode | History,history,,,,
+2,1,Dongxue,Right ,R7,3,Pete Hegseth responds to Ilhan Omar's tweet about him,fox news ,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R7,4,fremont police release body cam video of deadly gunfight,mercury news,,left-center,high,
+2,1,Dongxue,Right ,R7,5,desantis hits ocasio-cortez: i don't care if she's an eskimo,fox news,,right,mixed,medium credibility
+2,1,Dongxue,Right ,R7,6,caityln jenner rips newsom's response to covid,fox news ,,right,mixed,medium credibility
