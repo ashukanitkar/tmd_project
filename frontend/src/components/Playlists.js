@@ -4,6 +4,7 @@ import autoBind from 'auto-bind';
 import jsonData from '../watch_histories.json'
 import {withStyles} from "@material-ui/core/styles";
 import {Paper, Button, Typography} from '@material-ui/core'
+import RandomPlaylists from './RandomPlaylists';
 
 const styles = theme => ({
     root: {
@@ -39,33 +40,6 @@ const styles = theme => ({
         alignSelf: "center"
     },
 });
-
-
-function Project(props) {
-    return (
-        <Paper
-            className="Project"
-            style={{
-                width: "50%",
-                margin: "auto",
-                textAlign: "center"
-            }}
-            elevation={10}
-        >
-            <div
-                style={{
-                    margin: "auto"
-                }}>
-                <Typography>{props.item.title}</Typography>
-                <iframe width="340" height="200" src={props.item.link}
-                        title="YouTube video player" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                </iframe>
-            </div>
-        </Paper>
-    )
-}
 
 class Playlists extends React.Component {
     constructor(props) {
@@ -137,7 +111,7 @@ class Playlists extends React.Component {
         })
         return (
             <div className={classes.root}>
-                {playlists.map((playlist, idx) => {
+                {/* {playlists.map((playlist, idx) => {
                     return (
                         <div className={classes.playlistContainer}>
                             <h2 className={classes.textHeader}>Playlist {idx + 1}</h2>
@@ -159,6 +133,8 @@ class Playlists extends React.Component {
                         </div>
                     )
                 })}
+                 */}
+                <RandomPlaylists/>
                 <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
 
                 <form onSubmit={this.formSubmit} className={classes.textHeader}>
