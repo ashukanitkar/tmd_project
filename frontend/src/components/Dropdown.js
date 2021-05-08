@@ -4,10 +4,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { withStyles } from "@material-ui/core/styles";
 
 
-const useStyles = makeStyles((theme) => ({
+
+const styles = theme => ({
     formControl: {
       margin: theme.spacing(1),
       minWidth: 120,
@@ -16,36 +17,47 @@ const useStyles = makeStyles((theme) => ({
     selectEmpty: {
       marginTop: theme.spacing(2),
     },
-  }));
+  });
 
-function Dropdown() {
-    const classes = useStyles();
-    const [age, setAge] = React.useState('');
+class Dropdown extends React.Component {
 
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
+  constructor(props) {
+    super(props);
+    this.state = {
+        curr_user_index: 0,
+        curr_column: this.props.column
+    }
+  }
+
+  childFunction = (e) => {
+    e.preventDefault()
+    this.props.functionCallFromParent(this.state.curr_column, e.target.value)
+  }
+
+  handleChange = (event) => {
+    this.setState({"curr_user_index": event.target.value})
+    this.childFunction(event)
     
-    return (
+  };
+
+  render() {
+      const { classes, theme } = this.props;
+      return (
         <FormControl required className={classes.formControl}>
-        <InputLabel id="demo-simple-select-required-label">Age</InputLabel>
+        <InputLabel>User</InputLabel>
         <Select
-          labelId="demo-simple-select-required-label"
-          id="demo-simple-select-required"
-          value={age}
-          onChange={handleChange}
+          onChange={this.handleChange}
           className={classes.selectEmpty}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+        >  
+        <MenuItem value={0}>User {this.state.curr_column*2 + 1}</MenuItem>
+        <MenuItem value={1}>User {this.state.curr_column*2 + 2}</MenuItem>
+
         </Select>
         <FormHelperText>Required</FormHelperText>
       </FormControl>
     )
+  }
+
 }
 
-export default Dropdown;
+export default withStyles(styles, { withTheme: true })(Dropdown);
