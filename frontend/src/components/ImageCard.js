@@ -5,9 +5,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
-import pug1 from '../assets/pug1.jpeg';
-import pug2 from '../assets/pug2.jpeg';
-import pug3 from '../assets/pug3.jpeg';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
@@ -20,6 +17,14 @@ const styles = theme => ({
   controls: {
         alignItems: 'center',
         display: 'flex'
+  },
+  action: {
+    alignItems:"center",
+    display: "flex"
+  },
+  screenshot: {
+    height: 500,
+    width: "auto"
   }
 });
 
@@ -104,13 +109,12 @@ class ImageCard extends React.Component {
         console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png')
         return (
         <Card className={classes.root} variant="outlined">
-          <CardActionArea>
+          <CardActionArea className={classes.action}>
             <CardMedia
+              className={classes.screenshot}
               component="img"
-              alt="Pug1"
-              height="800"
+              // height="800"
               image={process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png'}
-              title="Pug"
             />
           </CardActionArea>
           <CardContent>
