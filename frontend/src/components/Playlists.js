@@ -82,58 +82,11 @@ class Playlists extends React.Component {
         this.props.history.push("/compare");
     }
 
-    /**
-     * Shuffles array in place.
-     * @param {Array} a items An array containing the items.
-     */
-    shuffle(a) {
-        var j, x, i;
-        for (i = a.length - 1; i > 0; i--) {
-            j = Math.floor(Math.random() * (i + 1));
-            x = a[i];
-            a[i] = a[j];
-            a[j] = x;
-        }
-        return a;
-    }
 
     render() {
         const {classes, theme} = this.props;
-        const loadData = () => JSON.parse(JSON.stringify(jsonData));
-        let playlists = []
-        Object.keys(loadData().users).forEach((key) => {
-            let user = []
-            let videos = this.shuffle(loadData().users[key].videos)
-            videos.slice(0, 7).forEach((video) => {
-                user.push(video)
-            });
-            playlists.push(user);
-        })
         return (
             <div className={classes.root}>
-                {/* {playlists.map((playlist, idx) => {
-                    return (
-                        <div className={classes.playlistContainer}>
-                            <h2 className={classes.textHeader}>Playlist {idx + 1}</h2>
-                            <Carousel
-                                className={classes.SecondExample}
-                                autoPlay={this.state.autoPlay}
-                                animation={this.state.animation}
-                                indicators={this.state.indicators}
-                                timeout={this.state.timeout}
-                                navButtonsAlwaysVisible={this.state.navButtonsAlwaysVisible}
-                                navButtonsAlwaysInvisible={this.state.navButtonsAlwaysInvisible}
-
-                            >
-                                {
-                                    playlist.map((video => <Project item={video}/>))
-                                }
-                            </Carousel>
-
-                        </div>
-                    )
-                })}
-                 */}
                 <RandomPlaylists/>
                 <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
 
