@@ -5,17 +5,18 @@ import Home from "./components/Home";
 import Findings from "./components/Findings";
 import Comparison from "./components/Comparison";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import {withStyles} from "@material-ui/core/styles";
 import Playlists from "./components/Playlists";
+import Grid from "@material-ui/core/Grid"
+import Box from '@material-ui/core/Box';
+
+
+
 
 const styles = theme => ({
     navBar: {
         background: "#131019",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
         height: "100px",
     },
 
@@ -23,6 +24,12 @@ const styles = theme => ({
         fontWeight: "700",
         color: "white",
         fontSize: "28px",
+        fontFamily: "Didot",
+    },
+    subtitleItems: {
+        fontWeight: "600",
+        color: "white",
+        fontSize: "18px",
         fontFamily: "Didot",
     }
 });
@@ -34,11 +41,21 @@ class App extends React.Component {
         return (
             <Router>
                 <AppBar position="sticky" className={classes.navBar}>
-                    <Toolbar>
-                        <Typography className={classes.navItems}>
-                            YouTube Filter Bubbles - FIX ME
-                        </Typography>
-                    </Toolbar>
+                <Box pt="1%">
+
+                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                <Typography variant="h4" gutterBottom className={classes.navItems}>
+                Filter Bubbles
+                </Typography>
+                </Grid>
+
+                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                <Typography variant="subtitle1" gutterBottom className={classes.subtitleItems}>
+                A guide to what they are, where they exist, and their  impact 
+                </Typography>
+                </Grid>
+
+                </Box>
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={Home}/>
