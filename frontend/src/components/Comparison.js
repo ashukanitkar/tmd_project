@@ -3,8 +3,6 @@ import Grid from "@material-ui/core/Grid"
 import Box from '@material-ui/core/Box';
 import React from "react";
 import Dropdown from "./Dropdown";
-import {useHistory} from "react-router-dom";
-import makeStyles from "@material-ui/core/styles/makeStyles";
 import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom"
 import Button from "@material-ui/core/Button";

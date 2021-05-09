@@ -7,7 +7,6 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import Typography from '@material-ui/core/Typography';
 import {withStyles} from "@material-ui/core/styles";
 import {ResponsivePie} from "nivo";
 
@@ -26,6 +25,18 @@ const styles = theme => ({
     screenshot: {
         height: 500,
         width: "auto"
+    },
+    caption: {
+        fontFamily: "Montserrat",
+        textAlign: "center",
+        color: "#99a1a3",
+        paddingTop: "20px"
+    },
+
+    pieChart: {
+        background: "pink",
+        height: "400px",
+        width: "50%"
     }
 });
 
@@ -134,299 +145,220 @@ class ImageCard extends React.Component {
         const {classes, theme} = this.props;
         const image_dir = this.load_image_dir(this.props.column, this.props.index)
 
-        // const data = [
-        //     {'left-center': 3, 'left': 2, NaN: 1},
-        //     {'left-center': 4, 'left': 1, NaN: 1}
-        // ];
+        const pieChartData = [[[[{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
+            'id': 'Left',
+            'label': 'Left',
+            'value': 2
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 4
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 2}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 4
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left',
+            'label': 'Left',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 4
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 2}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Least Bias', 'label': 'Least Bias', 'value': 3}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 3}, {
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 2
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}]], [[{
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 6
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left',
+            'label': 'Left',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 1
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 2}, {
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 1
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left',
+            'label': 'Left',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left',
+            'label': 'Left',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 2
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 3
+        }]]], [[[{'id': 'Left-Center', 'label': 'Left-Center', 'value': 5}, {
+            'id': 'Right',
+            'label': 'Right',
+            'value': 1
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 5
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 4}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 4}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 2
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 5
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 1}]], [[{
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 6
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 5
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 5
+        }], [{'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 5
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 2}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 4
+        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 5
+        }], [{'id': 'Left-Center', 'label': 'Left-Center', 'value': 6}]]], [[[{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}, {
+            'id': 'Right',
+            'label': 'Right',
+            'value': 2
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 2}, {
+            'id': 'Least Bias',
+            'label': 'Least Bias',
+            'value': 1
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 2
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 1
+        }, {'id': 'Right', 'label': 'Right', 'value': 2}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Left', 'label': 'Left', 'value': 2}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }, {'id': 'Right', 'label': 'Right', 'value': 1}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 2
+        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 2
+        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 3
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 3}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 3
+        }]], [[{'id': 'Left', 'label': 'Left', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 2
+        }, {'id': 'Right', 'label': 'Right', 'value': 3}], [{
+            'id': 'Unrated',
+            'label': 'Unrated',
+            'value': 1
+        }, {'id': 'Right', 'label': 'Right', 'value': 3}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 2
+        }], [{'id': 'Right', 'label': 'Right', 'value': 4}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 2
+        }], [{'id': 'Right', 'label': 'Right', 'value': 4}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 2
+        }], [{'id': 'Right', 'label': 'Right', 'value': 3}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 3
+        }], [{'id': 'Right', 'label': 'Right', 'value': 5}, {
+            'id': 'Right-Center',
+            'label': 'Right-Center',
+            'value': 1
+        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
+            'id': 'Left-Center',
+            'label': 'Left-Center',
+            'value': 1
+        }, {'id': 'Right', 'label': 'Right', 'value': 4}]]]]
 
-        // const data = [
-        //   {
-        //     "id": "left-center",
-        //     "label": "left-center",
-        //     "value": 3,
-        //     "color": "hsl(252, 70%, 50%)"
-        //   },
-        //   {
-        //     "id": "left",
-        //     "label": "left",
-        //     "value": 2,
-        //     "color": "hsl(360, 70%, 50%)"
-        //   },
-        //   {
-        //     "id": "NaN",
-        //     "label": "NaN",
-        //     "value": 1,
-        //     "color": "hsl(134, 70%, 50%)"
-        //   }
-        // ]
-
-        const pieChartData = [[[[{'id': 'NaN', 'label': 'NaN', 'value': 1, 'color': '#f47560'}, {
-            'id': 'left',
-            'label': 'left',
-            'value': 2,
-            'color': '#61cdbb'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 3, 'color': '#e8c1a0'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 4,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 2, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 4,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left',
-            'label': 'left',
-            'value': 1,
-            'color': '#61cdbb'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}], [{
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 4,
-            'color': '#f1e15b'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 2, 'color': '#e8c1a0'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'least bias', 'label': 'least bias', 'value': 3, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 3, 'color': '#f47560'}, {
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 2,
-            'color': '#f1e15b'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}]], [[{
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 6,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left',
-            'label': 'left',
-            'value': 1,
-            'color': '#61cdbb'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}], [{
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 1,
-            'color': '#f1e15b'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 1,
-            'color': '#9467bd'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 2, 'color': '#f47560'}, {
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 1,
-            'color': '#f1e15b'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left',
-            'label': 'left',
-            'value': 1,
-            'color': '#61cdbb'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left',
-            'label': 'left',
-            'value': 1,
-            'color': '#61cdbb'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 3, 'color': '#e8c1a0'}], [{
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 2,
-            'color': '#f1e15b'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 3,
-            'color': '#e8c1a0'
-        }]]], [[[{'id': 'left-center', 'label': 'left-center', 'value': 5, 'color': '#e8c1a0'}, {
-            'id': 'right',
-            'label': 'right',
-            'value': 1,
-            'color': '#e8a838'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 5,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 4, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 4, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 1, 'color': '#f47560'}, {
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 2,
-            'color': '#f1e15b'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 1, 'color': '#f47560'}, {
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 1,
-            'color': '#f1e15b'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}], [{
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 5,
-            'color': '#f1e15b'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 1, 'color': '#e8c1a0'}]], [[{
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 6,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 5,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 5,
-            'color': '#e8c1a0'
-        }], [{'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 5,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 2, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 4,
-            'color': '#e8c1a0'
-        }], [{'id': 'least bias', 'label': 'least bias', 'value': 1, 'color': '#f1e15b'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 5,
-            'color': '#e8c1a0'
-        }], [{'id': 'left-center', 'label': 'left-center', 'value': 6, 'color': '#e8c1a0'}]]], [[[{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 3, 'color': '#e8c1a0'}, {
-            'id': 'right',
-            'label': 'right',
-            'value': 2,
-            'color': '#e8a838'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 2, 'color': '#f47560'}, {
-            'id': 'least bias',
-            'label': 'least bias',
-            'value': 1,
-            'color': '#f1e15b'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 3, 'color': '#e8c1a0'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 2,
-            'color': '#f47560'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 1,
-            'color': '#e8c1a0'
-        }, {'id': 'right', 'label': 'right', 'value': 2, 'color': '#e8a838'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'left', 'label': 'left', 'value': 2, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }, {'id': 'right', 'label': 'right', 'value': 1, 'color': '#e8a838'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 2,
-            'color': '#f47560'
-        }, {'id': 'left-center', 'label': 'left-center', 'value': 4, 'color': '#e8c1a0'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 2,
-            'color': '#f47560'
-        }, {'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 3,
-            'color': '#e8c1a0'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 3, 'color': '#f47560'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 3,
-            'color': '#e8c1a0'
-        }]], [[{'id': 'left', 'label': 'left', 'value': 1, 'color': '#61cdbb'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 2,
-            'color': '#e8c1a0'
-        }, {'id': 'right', 'label': 'right', 'value': 3, 'color': '#e8a838'}], [{
-            'id': 'NaN',
-            'label': 'NaN',
-            'value': 1,
-            'color': '#f47560'
-        }, {'id': 'right', 'label': 'right', 'value': 3, 'color': '#e8a838'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 2,
-            'color': '#9467bd'
-        }], [{'id': 'right', 'label': 'right', 'value': 4, 'color': '#e8a838'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 2,
-            'color': '#9467bd'
-        }], [{'id': 'right', 'label': 'right', 'value': 4, 'color': '#e8a838'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 2,
-            'color': '#9467bd'
-        }], [{'id': 'right', 'label': 'right', 'value': 3, 'color': '#e8a838'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 3,
-            'color': '#9467bd'
-        }], [{'id': 'right', 'label': 'right', 'value': 5, 'color': '#e8a838'}, {
-            'id': 'right-center',
-            'label': 'right-center',
-            'value': 1,
-            'color': '#9467bd'
-        }], [{'id': 'NaN', 'label': 'NaN', 'value': 1, 'color': '#f47560'}, {
-            'id': 'left-center',
-            'label': 'left-center',
-            'value': 1,
-            'color': '#e8c1a0'
-        }, {'id': 'right', 'label': 'right', 'value': 4, 'color': '#e8a838'}]]]]
-        console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index + 1).toString())
         return (
             <Card className={classes.root} variant="outlined">
                 <CardActionArea className={classes.action}>
@@ -450,125 +382,16 @@ class ImageCard extends React.Component {
                             </IconButton>
                         </Grid>
                     </div>
-                    <div>
-                        <h1>Bias Rating</h1>
+                    <div style={{background: "black", borderRadius: "20px"}}>
+                        <h3 className={classes.caption}>Bias Rating</h3>
                         <div style={{height: "400px"}}>
                             <ResponsivePie
                                 data={pieChartData[this.props.column][this.props.index][this.state.current_image_index]}
-                                // margin={{top: 40, right: 80, bottom: 80, left: 80}}
                                 innerRadius={0.5}
                                 padAngle={0.7}
                                 cornerRadius={3}
                                 activeOuterRadiusOffset={8}
-                                // colors={{scheme: 'nivo'}}
                                 borderWidth={1}
-                                // borderColor={{from: 'color', modifiers: [['darker', 0.2]]}}
-                                enableArcLinkLabels={false}
-                                arcLinkLabelsTextOffset={0}
-                                arcLinkLabelsTextColor="#333333"
-                                arcLinkLabelsDiagonalLength={0}
-                                arcLinkLabelsStraightLength={0}
-                                arcLinkLabelsThickness={0}
-                                arcLinkLabelsColor={{from: 'color'}}
-                                arcLabel={function (e) {
-                                    return e.id + " (" + e.value + ")"
-                                }}
-                                arcLabelsTextColor="black"
-                                defs={[
-                                    {
-                                        id: 'dots',
-                                        type: 'patternDots',
-                                        background: 'inherit',
-                                        color: 'rgba(255, 255, 255, 0.3)',
-                                        size: 4,
-                                        padding: 1,
-                                        stagger: true
-                                    },
-                                    {
-                                        id: 'lines',
-                                        type: 'patternLines',
-                                        background: 'inherit',
-                                        color: 'rgba(255, 255, 255, 0.3)',
-                                        rotation: -45,
-                                        lineWidth: 6,
-                                        spacing: 10
-                                    }
-                                ]}
-                                fill={[
-                                    {
-                                        match: {
-                                            id: 'ruby'
-                                        },
-                                        id: 'dots'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'c'
-                                        },
-                                        id: 'dots'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'go'
-                                        },
-                                        id: 'dots'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'python'
-                                        },
-                                        id: 'dots'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'scala'
-                                        },
-                                        id: 'lines'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'lisp'
-                                        },
-                                        id: 'lines'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'elixir'
-                                        },
-                                        id: 'lines'
-                                    },
-                                    {
-                                        match: {
-                                            id: 'javascript'
-                                        },
-                                        id: 'lines'
-                                    }
-                                ]}
-                                legends={[
-                                    {
-                                        anchor: 'bottom',
-                                        direction: 'row',
-                                        justify: false,
-                                        translateX: 0,
-                                        translateY: 56,
-                                        itemsSpacing: 0,
-                                        itemWidth: 100,
-                                        itemHeight: 18,
-                                        itemTextColor: '#999',
-                                        itemDirection: 'left-to-right',
-                                        itemOpacity: 1,
-                                        symbolSize: 18,
-                                        symbolShape: 'circle',
-                                        effects: [
-                                            {
-                                                on: 'hover',
-                                                style: {
-                                                    itemTextColor: '#000'
-                                                }
-                                            }
-                                        ]
-                                    }
-                                ]}
                             />
                         </div>
                     </div>
