@@ -1,6 +1,5 @@
 import { ResponsiveBar } from '@nivo/bar'
 import React from 'react'
-import {withStyles} from "@material-ui/core/styles";
 import data from './BarChart/data.js'
 import "./BarChart/chart.css"
 

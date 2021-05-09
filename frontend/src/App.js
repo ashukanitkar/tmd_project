@@ -12,8 +12,6 @@ import Grid from "@material-ui/core/Grid"
 import Box from '@material-ui/core/Box';
 
 
-
-
 const styles = theme => ({
     navBar: {
         background: "#131019",
@@ -22,45 +20,45 @@ const styles = theme => ({
 
     navItems: {
         fontWeight: "700",
-        color: "white",
-        fontSize: "28px",
+        color: "#99a1a3",
+        fontSize: "32px",
         fontFamily: "Didot",
     },
     subtitleItems: {
         fontWeight: "600",
-        color: "white",
-        fontSize: "18px",
-        fontFamily: "Didot",
+        color: "#99a1a3",
+        fontSize: "15px",
+        fontFamily: "Montserrat",
     }
 });
 
 
 class App extends React.Component {
     render() {
-        const { classes, theme } = this.props;
+        const {classes, theme} = this.props;
         return (
             <Router>
                 <AppBar position="sticky" className={classes.navBar}>
-                <Box pt="1%">
+                    <Box pt="1%">
 
-                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
-                <Typography variant="h4" gutterBottom className={classes.navItems}>
-                Filter Bubbles
-                </Typography>
-                </Grid>
+                        <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                            <Typography variant="h4" gutterBottom className={classes.navItems}>
+                                Filter Bubbles
+                            </Typography>
+                        </Grid>
 
-                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
-                <Typography variant="subtitle1" gutterBottom className={classes.subtitleItems}>
-                A guide to what they are, where they exist, and their  impact 
-                </Typography>
-                </Grid>
+                        <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                            <Typography variant="subtitle1" gutterBottom className={classes.subtitleItems}>
+                                A guide to what they are, where they exist, and their impact
+                            </Typography>
+                        </Grid>
 
-                </Box>
+                    </Box>
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/playlists" component={Playlists}/>
-                    <Route path="/compare" render={(props) => <Comparison {... props}/>}/>
+                    <Route path="/compare" render={(props) => <Comparison {...props}/>}/>
                     <Route path="/findings" component={Findings}/>
                 </Switch>
             </Router>
@@ -68,5 +66,5 @@ class App extends React.Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(App);
+export default withStyles(styles, {withTheme: true})(App);
 
