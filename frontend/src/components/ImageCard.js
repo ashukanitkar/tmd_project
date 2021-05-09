@@ -8,7 +8,9 @@ import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from "@material-ui/core/styles";
+import {withStyles} from "@material-ui/core/styles";
+import {ResponsiveBar} from "@nivo/bar";
+import {ResponsivePie} from "nivo";
 
 const styles = theme => ({
     root: {
@@ -17,63 +19,58 @@ const styles = theme => ({
     controls: {
         alignItems: 'center',
         display: 'flex'
-  },
-  action: {
-    alignItems:"center",
-    display: "flex"
-  },
-  screenshot: {
-    height: 500,
-    width: "auto"
-  }
+    },
+    action: {
+        alignItems: "center",
+        display: "flex"
+    },
+    screenshot: {
+        height: 500,
+        width: "auto"
+    }
 });
 
 class ImageCard extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      current_image_index: 0,
-      column: props.column, 
-      index: props.index
-    }
-    this.arrowClick = this.arrowClick.bind(this);
-  }
 
-  
-  load_image_dir() {
-    let url = "Screenshots/"
-    let column = this.props.column
-    let index = this.props.index //temp
-    if (column === 0) {
-      url += "Left\ Wing/"
-      if (index === 0) {
-        url += "benje_left_R"
-      }
-      else {
-        url += "candice_left_R"
-      }
+    constructor(props) {
+        super(props);
+        this.state = {
+            current_image_index: 0,
+            column: props.column,
+            index: props.index
+        }
+        this.arrowClick = this.arrowClick.bind(this);
     }
-    else if (column === 2) {
-      url += "Control/"
-      if (index === 0) {
-        url += "cole_control_R"
-      }
-      else {
-        url += "jaeden_control_R"
-      }
+
+
+    load_image_dir() {
+        let url = "Screenshots/"
+        let column = this.props.column
+        let index = this.props.index //temp
+        if (column === 0) {
+            url += "Left\ Wing/"
+            if (index === 0) {
+                url += "benje_left_R"
+            } else {
+                url += "candice_left_R"
+            }
+        } else if (column === 2) {
+            url += "Control/"
+            if (index === 0) {
+                url += "cole_control_R"
+            } else {
+                url += "jaeden_control_R"
+            }
+        } else {
+            url += "Right\ Wing/"
+            if (index === 0) {
+                url += "derren_right_R"
+            } else {
+                url += "dongxue_right_R"
+            }
+        }
+        return url
     }
-    else {
-      url += "Right\ Wing/"
-      if (index === 0) {
-        url += "derren_right_R"
-      }
-      else {
-        url += "dongxue_right_R"
-      }
-    }
-    return url 
-  }
 
     captions = [[[['left-center, left-center,       left ,         NaN, left-center,       left'],
         ['left-center, left-center,         NaN,       left , left-center, left-center'],
@@ -137,33 +134,285 @@ class ImageCard extends React.Component {
     render() {
         const {classes, theme} = this.props;
         const image_dir = this.load_image_dir(this.props.column, this.props.index)
+
+        // const data = [
+        //     {'left-center': 3, 'left': 2, NaN: 1},
+        //     {'left-center': 4, 'left': 1, NaN: 1}
+        // ];
+
+        // const data = [
+        //   {
+        //     "id": "left-center",
+        //     "label": "left-center",
+        //     "value": 3,
+        //     "color": "hsl(252, 70%, 50%)"
+        //   },
+        //   {
+        //     "id": "left",
+        //     "label": "left",
+        //     "value": 2,
+        //     "color": "hsl(360, 70%, 50%)"
+        //   },
+        //   {
+        //     "id": "NaN",
+        //     "label": "NaN",
+        //     "value": 1,
+        //     "color": "hsl(134, 70%, 50%)"
+        //   }
+        // ]
+
+        const pieChartData = [[[[{'id': 'NaN', 'label': 'NaN', 'value': '1'}, {
+            'id': 'left',
+            'label': 'left',
+            'value': '2'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '3'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '4'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '2'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '4'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left',
+            'label': 'left',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}], [{
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '4'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '2'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'least bias', 'label': 'least bias', 'value': '3'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '3'}, {
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '2'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}]], [[{
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '6'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left',
+            'label': 'left',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}], [{
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '1'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '2'}, {
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '1'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left',
+            'label': 'left',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left',
+            'label': 'left',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '3'}], [{
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '2'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '3'
+        }]]], [[[{'id': 'left-center', 'label': 'left-center', 'value': '5'}, {
+            'id': 'right',
+            'label': 'right',
+            'value': '1'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '5'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '4'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '4'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '1'}, {
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '2'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '1'}, {
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}], [{
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '5'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '1'}]], [[{
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '6'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '5'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '5'
+        }], [{'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '5'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '2'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '4'
+        }], [{'id': 'least bias', 'label': 'least bias', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '5'
+        }], [{'id': 'left-center', 'label': 'left-center', 'value': '6'}]]], [[[{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '3'}, {
+            'id': 'right',
+            'label': 'right',
+            'value': '2'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '2'}, {
+            'id': 'least bias',
+            'label': 'least bias',
+            'value': '1'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '3'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '2'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '1'
+        }, {'id': 'right', 'label': 'right', 'value': '2'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'left', 'label': 'left', 'value': '2'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }, {'id': 'right', 'label': 'right', 'value': '1'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '2'
+        }, {'id': 'left-center', 'label': 'left-center', 'value': '4'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '2'
+        }, {'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '3'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '3'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '3'
+        }]], [[{'id': 'left', 'label': 'left', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '2'
+        }, {'id': 'right', 'label': 'right', 'value': '3'}], [{
+            'id': 'NaN',
+            'label': 'NaN',
+            'value': '1'
+        }, {'id': 'right', 'label': 'right', 'value': '3'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '2'
+        }], [{'id': 'right', 'label': 'right', 'value': '4'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '2'
+        }], [{'id': 'right', 'label': 'right', 'value': '4'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '2'
+        }], [{'id': 'right', 'label': 'right', 'value': '3'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '3'
+        }], [{'id': 'right', 'label': 'right', 'value': '5'}, {
+            'id': 'right-center',
+            'label': 'right-center',
+            'value': '1'
+        }], [{'id': 'NaN', 'label': 'NaN', 'value': '1'}, {
+            'id': 'left-center',
+            'label': 'left-center',
+            'value': '1'
+        }, {'id': 'right', 'label': 'right', 'value': '4'}]]]]
+
+
         return (
-        <Card className={classes.root} variant="outlined">
-          <CardActionArea className={classes.action}>
-            <CardMedia
-              className={classes.screenshot}
-              component="img"
-              // height="800"
-              image={process.env.PUBLIC_URL + image_dir + (this.state.current_image_index+1).toString() + '.png'}
-            />
-          </CardActionArea>
-          <CardContent>
-            <div className={classes.controls}>
-            <Grid container justify="center">
-                <IconButton aria-label="previous" onClick={this.arrowClick} id="backward" disabled={this.state.current_image_index === 0}>
-                  <ArrowLeftIcon />
-                </IconButton>
-                <IconButton aria-label="next" onClick={this.arrowClick} id="forward" disabled={this.state.current_image_index === this.num_images-1}>
-                  <ArrowRightIcon />
-                </IconButton>
-                <Typography variant="subtitle1" gutterBottom align="justify">
-                    {this.captions[this.props.column][this.props.index][this.state.current_image_index]}
-                </Typography>
-            </Grid>
-            </div>
-          </CardContent>
-        </Card>
-      );
+            <Card className={classes.root} variant="outlined">
+                <CardActionArea className={classes.action}>
+                    <CardMedia
+                        className={classes.screenshot}
+                        component="img"
+                        // height="800"
+                        image={process.env.PUBLIC_URL + image_dir + (this.state.current_image_index + 1).toString() + '.png'}
+                    />
+                </CardActionArea>
+                <CardContent>
+                    <div className={classes.controls}>
+                        <Grid container justify="center">
+                            <IconButton aria-label="previous" onClick={this.arrowClick} id="backward"
+                                        disabled={this.state.current_image_index === 0}>
+                                <ArrowLeftIcon/>
+                            </IconButton>
+                            <IconButton aria-label="next" onClick={this.arrowClick} id="forward"
+                                        disabled={this.state.current_image_index === this.num_images - 1}>
+                                <ArrowRightIcon/>
+                            </IconButton>
+                            <Typography variant="subtitle1" gutterBottom align="justify">
+                                {this.captions[this.props.column][this.props.index][this.state.current_image_index]}
+                            </Typography>
+
+                            {/*<div>*/}
+                            {/*    <h1>Nivo basic demo</h1>*/}
+                            {/*    <div style={{height: "400px"}}>*/}
+                            {/*        <ResponsivePie data={pieChartData[this.props.column][this.props.index][this.state.current_image_index]}/>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+
+                        </Grid>
+                    </div>
+                </CardContent>
+            </Card>
+        );
     }
 }
 
