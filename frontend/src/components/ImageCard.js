@@ -426,7 +426,7 @@ class ImageCard extends React.Component {
             'value': 1,
             'color': '#e8c1a0'
         }, {'id': 'right', 'label': 'right', 'value': 4, 'color': '#e8a838'}]]]]
-
+        console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index + 1).toString())
         return (
             <Card className={classes.root} variant="outlined">
                 <CardActionArea className={classes.action}>
