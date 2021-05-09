@@ -32,6 +32,11 @@ const styles = theme => ({
     textHeader: {
         alignSelf: "center"
     },
+
+    textBody: {
+        alignSelf: "center",
+        width: "65%"
+    }
 });
 
 class Playlists extends React.Component {
@@ -83,6 +88,42 @@ class Playlists extends React.Component {
         const {classes, theme} = this.props;
         return (
             <div className={classes.root}>
+                <h3 className={classes.textHeader}>Main Task</h3>
+                <br/>
+                <div className={classes.textBody}>
+                    To start with, we have the YouTube watch histories for 6 different users below. Scroll
+                    through the videos and choose the playlist of videos which either resembles your own YouTube watch
+                    history or most interests you.
+                </div>
+                <br/><br/>
+
+                <h3 className={classes.textHeader}>Background</h3>
+                <div className={classes.textBody}>
+                    When watching any video on YouTube, there is an Up Next section on the right of the screen with
+                    videos YouTube curates and recommends for a user to watch next. YouTube heavily personalizes
+                    recommended videos
+                    for users with different watch histories. For example with regards to political affiliation, users
+                    with
+                    left wing political content in their watch histories receive recommendations from left wing
+                    channels, and vice versa.
+                    <br/><br/>
+
+                    The playlists presented below here are a subset of the watch histories from 6 YouTube accounts that
+                    have
+                    been specifically curated to have view histories with content from different political affiliations:
+                    2
+                    left and 2 right leaning accounts along with 2 control accounts with more varied mostly
+                    non-political
+                    content.
+
+                    <br/><br/>
+                    By choosing a playlist that most resembles your own watch history, you can use this site as a
+                    starting
+                    point to understand what your own filter bubble may look like when compared to other accounts with
+                    much
+                    different interests and preferences.
+                </div>
+                <br/><br/>
                 <RandomPlaylists/>
                 <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
 
@@ -154,7 +195,8 @@ class Playlists extends React.Component {
                         </label>
                     </div>
 
-                    <Button variant="contained" onClick={this.navigateTo.bind(this)} disabled={!(this.state.selectedOption != null)} className={classes.primaryButton}>
+                    <Button variant="contained" onClick={this.navigateTo.bind(this)}
+                            disabled={!(this.state.selectedOption != null)} className={classes.primaryButton}>
                         See Results
                     </Button>
                 </form>
