@@ -136,12 +136,12 @@ class Comparison extends React.Component {
                 </Box>
                 <Box py="3%">
                     <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
-                        <Button variant="contained" className={classes.primaryButton} component={Link} to="/findings">
-                            Continue to Findings
-                        </Button>
-                        <Button variant="contained" className={classes.secondaryButton} component={Link}
+                        <Button variant="contained" className={classes.defaultButton} component={Link}
                                 to="/playlists">
                             Select Another Playlist
+                        </Button>
+                        <Button variant="contained" className={classes.primaryButton} component={Link} to="/findings">
+                            Continue to Findings
                         </Button>
                         <Button variant="contained" className={classes.defaultButton} component={Link} to="/">
                             Start over
