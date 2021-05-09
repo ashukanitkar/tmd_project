@@ -10,6 +10,7 @@ import {withStyles} from "@material-ui/core/styles";
 import Playlists from "./components/Playlists";
 import Grid from "@material-ui/core/Grid"
 import Box from '@material-ui/core/Box';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const styles = theme => ({
@@ -55,12 +56,14 @@ class App extends React.Component {
 
                     </Box>
                 </AppBar>
+                <ScrollToTop>
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/playlists" component={Playlists}/>
                     <Route path="/compare" render={(props) => <Comparison {...props}/>}/>
                     <Route path="/findings" component={Findings}/>
                 </Switch>
+                </ScrollToTop>
             </Router>
         )
     }
