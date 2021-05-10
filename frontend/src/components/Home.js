@@ -13,7 +13,8 @@ const styles = theme => ({
     root: {
         minWidth: 275,
         height: 190,
-        borderColor: "#ecc787"
+        borderColor: "#ecc787",
+        borderWidth: "5px"
     },
     bullet: {
         display: 'inline-block',

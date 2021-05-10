@@ -4,6 +4,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -374,11 +376,11 @@ class ImageCard extends React.Component {
                         <Grid container justify="center">
                             <IconButton aria-label="previous" onClick={this.arrowClick} id="backward"
                                         disabled={this.state.current_image_index === 0}>
-                                <ArrowLeftIcon/>
+                                <ArrowBackIcon/>
                             </IconButton>
                             <IconButton aria-label="next" onClick={this.arrowClick} id="forward"
                                         disabled={this.state.current_image_index === this.num_images - 1}>
-                                <ArrowRightIcon/>
+                                <ArrowForwardIcon/>
                             </IconButton>
                         </Grid>
                     </div>
