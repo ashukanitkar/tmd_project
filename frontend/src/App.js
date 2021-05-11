@@ -21,13 +21,13 @@ const styles = theme => ({
 
     navItems: {
         fontWeight: "700",
-        color: "#99a1a3",
+        color: "#ecc787",
         fontSize: "32px",
         fontFamily: "Didot",
     },
     subtitleItems: {
         fontWeight: "600",
-        color: "#99a1a3",
+        color: "#ffffff",
         fontSize: "15px",
         fontFamily: "Montserrat",
     }
