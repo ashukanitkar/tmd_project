@@ -3,14 +3,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import React from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import {withStyles} from "@material-ui/core/styles";
 import {ResponsivePie} from "nivo";
+import pieChartsData from "./pieChartsData"
 
 const styles = theme => ({
     root: {
@@ -84,50 +83,6 @@ class ImageCard extends React.Component {
         return url
     }
 
-    captions = [[[['left-center, left-center,       left ,         NaN, left-center,       left'],
-        ['left-center, left-center,         NaN,       left , left-center, left-center'],
-        ['left-center, left-center, left-center, left-center,  least bias,  least bias'],
-        ['least bias, left-center, left-center,       left , left-center, left-center'],
-        ['least bias,  least bias, left-center, left-center,  least bias,  least bias'],
-        ['least bias, left-center,         NaN, left-center,  least bias,  least bias'],
-        ['left ,        NaN,        NaN,        NaN, least bias, least bias']],
-        [['left-center, left-center, left-center, left-center, left-center, left-center'],
-            ['left-center, left-center, left-center,  least bias, left-center,       left'],
-            ['left-center,  left-center,  left-center,   least bias,  left-center, right-center'],
-            ['left , left-center,         NaN,         NaN, left-center,  least bias'],
-            ['left-center,  least bias, left-center, left-center,       left , left-center'],
-            ['least bias, left-center, left-center,       left ,         NaN, left-center'],
-            ['left-center, left-center, left-center,       left ,  least bias,  least bias']
-        ]],
-        [[['left-center, left-center, left-center, left-center, left-center,       right'],
-            ['least bias, left-center, left-center, left-center, left-center, left-center'],
-            ['least bias, left-center,  least bias,  least bias, left-center,  least bias'],
-            ['least bias, left-center,  least bias, left-center,  least bias,  least bias'],
-            ['least bias, left-center,         NaN,  least bias, left-center,       left'],
-            ['least bias, left-center, left-center, left-center, left-center,         NaN'],
-            ['least bias,  least bias, left-center,  least bias,  least bias,  least bias']], [
-            ['left-center, left-center, left-center, left-center, left-center, left-center'],
-            ['left-center, left-center, left-center,  least bias, left-center, left-center'],
-            ['left-center,  least bias, left-center, left-center, left-center, left-center'],
-            ['left-center, left-center, left-center,       left , left-center, left-center'],
-            ['left-center, left-center,  least bias, left-center,  least bias, left-center'],
-            ['left-center,  least bias, left-center, left-center, left-center, left-center'],
-            ['left-center, left-center, left-center, left-center, left-center, left-center']]],
-        [[['left-center, left-center,         NaN,       right, left-center,       right'],
-            ['left-center,         NaN, left-center,         NaN, left-center,  least bias'],
-            ['left ,       right,         NaN,         NaN, left-center,       right'],
-            ['left-center,         NaN,       right,       left , left-center,       left'],
-            ['left-center,         NaN, left-center, left-center, left-center,         NaN'],
-            ['left , left-center, left-center,         NaN, left-center,         NaN'],
-            ['NaN, left-center, left-center, left-center,         NaN,         NaN']],
-            [['right,       right,       left ,       right, left-center, left-center'],
-                ['right, right-center,        right,        right,          NaN, right-center'],
-                ['right,        right, right-center,        right,        right, right-center'],
-                ['right, right-center,        right,        right,        right, right-center'],
-                ['right, right-center, right-center, right-center,        right,        right'],
-                ['right,        right,        right,        right,        right, right-center'],
-                ['right,         NaN,       right, left-center,       right,       right']]]]
-
     num_images = 7
 
     arrowClick(event) {
@@ -146,221 +101,7 @@ class ImageCard extends React.Component {
     render() {
         const {classes, theme} = this.props;
         const image_dir = this.load_image_dir(this.props.column, this.props.index)
-
-        const pieChartData = [[[[{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
-            'id': 'Left',
-            'label': 'Left',
-            'value': 2
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 4
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 2}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 4
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left',
-            'label': 'Left',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 4
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 2}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Least Bias', 'label': 'Least Bias', 'value': 3}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 3}, {
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 2
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}]], [[{
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 6
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left',
-            'label': 'Left',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 1
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 2}, {
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 1
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left',
-            'label': 'Left',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left',
-            'label': 'Left',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 2
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 3
-        }]]], [[[{'id': 'Left-Center', 'label': 'Left-Center', 'value': 5}, {
-            'id': 'Right',
-            'label': 'Right',
-            'value': 1
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 5
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 4}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 4}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 2
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 5
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 1}]], [[{
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 6
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 5
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 5
-        }], [{'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 5
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 2}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 4
-        }], [{'id': 'Least Bias', 'label': 'Least Bias', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 5
-        }], [{'id': 'Left-Center', 'label': 'Left-Center', 'value': 6}]]], [[[{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}, {
-            'id': 'Right',
-            'label': 'Right',
-            'value': 2
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 2}, {
-            'id': 'Least Bias',
-            'label': 'Least Bias',
-            'value': 1
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 3}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 2
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 1
-        }, {'id': 'Right', 'label': 'Right', 'value': 2}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Left', 'label': 'Left', 'value': 2}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }, {'id': 'Right', 'label': 'Right', 'value': 1}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 2
-        }, {'id': 'Left-Center', 'label': 'Left-Center', 'value': 4}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 2
-        }, {'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 3
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 3}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 3
-        }]], [[{'id': 'Left', 'label': 'Left', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 2
-        }, {'id': 'Right', 'label': 'Right', 'value': 3}], [{
-            'id': 'Unrated',
-            'label': 'Unrated',
-            'value': 1
-        }, {'id': 'Right', 'label': 'Right', 'value': 3}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 2
-        }], [{'id': 'Right', 'label': 'Right', 'value': 4}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 2
-        }], [{'id': 'Right', 'label': 'Right', 'value': 4}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 2
-        }], [{'id': 'Right', 'label': 'Right', 'value': 3}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 3
-        }], [{'id': 'Right', 'label': 'Right', 'value': 5}, {
-            'id': 'Right-Center',
-            'label': 'Right-Center',
-            'value': 1
-        }], [{'id': 'Unrated', 'label': 'Unrated', 'value': 1}, {
-            'id': 'Left-Center',
-            'label': 'Left-Center',
-            'value': 1
-        }, {'id': 'Right', 'label': 'Right', 'value': 4}]]]]
-
+        console.log(process.env.PUBLIC_URL + image_dir + (this.state.current_image_index + 1).toString() + '.png')
         return (
             <Card className={classes.root} variant="outlined">
                 <CardActionArea className={classes.action}>
@@ -387,14 +128,73 @@ class ImageCard extends React.Component {
                     <div style={{background: "black", borderRadius: "20px"}}>
                         <h3 className={classes.caption}>Bias Rating</h3>
                         <div style={{height: "400px"}}>
-                            <ResponsivePie
-                                data={pieChartData[this.props.column][this.props.index][this.state.current_image_index]}
-                                innerRadius={0.5}
-                                padAngle={0.7}
-                                cornerRadius={3}
-                                activeOuterRadiusOffset={8}
-                                borderWidth={1}
-                            />
+                        <ResponsivePie
+        data={pieChartsData[(2*this.state.column) + this.state.index][this.state.current_image_index]}
+        margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
+        innerRadius={0.5}
+        padAngle={2}
+        cornerRadius={3}
+        activeOuterRadiusOffset={8}
+        borderWidth={1}
+        defs={[
+            {
+                id: 'dots',
+                type: 'patternDots',
+                background: 'inherit',
+                color: 'rgba(255, 255, 255, 0.3)',
+                size: 4,
+                padding: 1,
+                stagger: true
+            },
+            {
+                id: 'lines',
+                type: 'patternLines',
+                background: 'inherit',
+                color: 'rgba(255, 255, 255, 0.3)',
+                rotation: -45,
+                lineWidth: 6,
+                spacing: 10
+            }
+        ]}
+        fill={[
+            {
+                match: {
+                    id: 'left-center'
+                },
+                id: 'dots'
+            },
+            {
+                match: {
+                    id: 'left'
+                },
+                id: 'dots'
+            },
+            {
+                match: {
+                    id: 'right-center'
+                },
+                id: 'dots'
+            },
+            {
+                match: {
+                    id: 'right'
+                },
+                id: 'dots'
+            },
+            {
+                match: {
+                    id: 'least-bias'
+                },
+                id: 'lines'
+            },
+            {
+                match: {
+                    id: 'nan'
+                },
+                id: 'lines'
+            }
+        ]}
+    />
                         </div>
                     </div>
                 </CardContent>
