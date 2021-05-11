@@ -4,8 +4,9 @@ import data from './BarChart/data.js'
 import "./BarChart/chart.css"
 import Card from "@material-ui/core/Card";
 import {CardContent, CardMedia} from "@material-ui/core";
-import leftImg from '../left_channels.png';
-import rightImg from '../right_channels.png';
+import rightImg  from '../assets/right_word_cloud.png';
+import leftImg  from '../assets/left_word_cloud.png';
+import controlImg  from '../assets/control_word_cloud.png';
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import {withStyles} from "@material-ui/core/styles";
@@ -168,6 +169,15 @@ class Findings extends React.Component {
                             </CardMedia>
                             <CardContent className={classes.cardCaptions}>
                                 Right Channels
+                            </CardContent>
+                        </Card>
+                        <Card style={{display: "flex", flexDirection: "column"}}>
+                            <CardMedia
+                                component="img"
+                                image={controlImg}>
+                            </CardMedia>
+                            <CardContent className={classes.cardCaptions}>
+                                Control Channels
                             </CardContent>
                         </Card>
                     </Grid>
