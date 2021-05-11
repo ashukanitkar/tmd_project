@@ -151,34 +151,34 @@ class Findings extends React.Component {
                     The word clouds below visualize the most commonly occurring channels for left and right-leaning
                     accounts.
                 </div>
-                <Box mt="6%">
+                <Box mt="1%">
                     <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
-                        <Card style={{display: "flex", flexDirection: "column"}}>
+                        <Card style={{display: "flex", flexDirection: "column", margin: "20px"}}>
+                        <CardContent className={classes.cardCaptions}>
+                                Left Channels
+                            </CardContent>
                             <CardMedia
                                 component="img"
                                 image={leftImg}>
                             </CardMedia>
-                            <CardContent className={classes.cardCaptions}>
-                                Left Channels
-                            </CardContent>
                         </Card>
-                        <Card style={{display: "flex", flexDirection: "column"}}>
+                        <Card style={{display: "flex", flexDirection: "column", margin: "20px"}}>
+                        <CardContent className={classes.cardCaptions}>
+                                Right Channels
+                            </CardContent>
                             <CardMedia
                                 component="img"
                                 image={rightImg}>
                             </CardMedia>
-                            <CardContent className={classes.cardCaptions}>
-                                Right Channels
-                            </CardContent>
                         </Card>
                         <Card style={{display: "flex", flexDirection: "column"}}>
+                        <CardContent className={classes.cardCaptions}>
+                                Control Channels
+                            </CardContent>
                             <CardMedia
                                 component="img"
                                 image={controlImg}>
                             </CardMedia>
-                            <CardContent className={classes.cardCaptions}>
-                                Control Channels
-                            </CardContent>
                         </Card>
                     </Grid>
                 </Box>
