@@ -111,7 +111,7 @@ class Playlists extends React.Component {
         console.log(oldState, "before the set")
         oldState[index] = !oldState[index]
         console.log(oldState)
-        this.setState({ isFlipped: oldState });
+        this.setState({isFlipped: oldState});
     }
 
     formSubmit(event) {
@@ -138,74 +138,90 @@ class Playlists extends React.Component {
         return (
             <div className={classes.root}>
                 <Box>
-                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
-                <ReactCardFlip isFlipped={this.state.isFlipped[0]}>
-                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="0">
-                    <p className={classes.title}> Background </p>
+                    <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                        <ReactCardFlip isFlipped={this.state.isFlipped[0]}>
+                            <div className={classes.cardFront} onMouseOver={this.handleClick} id="0">
+                                <p className={classes.title}> Background </p>
 
-                    </div>
+                            </div>
 
-                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="0">
-                    <p className={classes.subtitle}>
-                    When watching any video on YouTube, there is an Up Next section on the right of the screen with
-                    videos YouTube curates and recommends for a user to watch next. YouTube heavily personalizes
-                    recommended videos
-                    for users with different watch histories. For example with regards to political affiliation, users
-                    with
-                    left wing political content in their watch histories receive recommendations from left wing
-                    channels, and vice versa.
-                    <br/><br/>
+                            <div className={classes.cardBack} onMouseOut={this.handleClick} id="0">
+                                <p className={classes.subtitle}>
+                                    When watching any video on YouTube, there is an Up Next section on the right of the
+                                    screen with
+                                    videos YouTube curates and recommends for a user to watch next. YouTube heavily
+                                    personalizes
+                                    recommended videos
+                                    for users with different watch histories. For example with regards to political
+                                    affiliation, users
+                                    with
+                                    left wing political content in their watch histories receive recommendations from
+                                    left wing
+                                    channels, and vice versa.
+                                    <br/><br/>
 
-                    The playlists presented below here are a subset of the watch histories from 6 YouTube accounts that
-                    have
-                    been specifically curated to have view histories with content from different political affiliations:
-                    2
-                    left and 2 right leaning accounts along with 2 control accounts with more varied mostly
-                    non-political
-                    content.
-                    </p>
+                                    The playlists presented below here are a subset of the watch histories from 6
+                                    YouTube accounts that
+                                    have
+                                    been specifically curated to have view histories with content from different
+                                    political affiliations:
+                                    2
+                                    left and 2 right leaning accounts along with 2 control accounts with more varied
+                                    mostly
+                                    non-political
+                                    content.
+                                </p>
 
-                    </div>
-                </ReactCardFlip>
+                            </div>
+                        </ReactCardFlip>
 
-                <ReactCardFlip isFlipped={this.state.isFlipped[1]}>
-                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="1">
-                    <p className={classes.title}> Context </p>
+                        <ReactCardFlip isFlipped={this.state.isFlipped[1]}>
+                            <div className={classes.cardFront} onMouseOver={this.handleClick} id="1">
+                                <p className={classes.title}> Context </p>
 
-                    </div>
+                            </div>
 
-                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="1">
-                    <p className={classes.subtitle}>
-                    By choosing a playlist that most resembles your own watch history, you can use this site as a
-                    starting
-                    point to understand what your own filter bubble may look like when compared to other accounts with
-                    much
-                    different interests and preferences.
-                    </p>
+                            <div className={classes.cardBack} onMouseOut={this.handleClick} id="1">
+                                <p className={classes.subtitle}>
+                                    By choosing a playlist that most resembles your own watch history, you can use this
+                                    site as a
+                                    starting
+                                    point to understand what your own filter bubble may look like when compared to other
+                                    accounts with
+                                    much
+                                    different interests and preferences.
+                                </p>
 
-                    </div>
-                </ReactCardFlip>
+                            </div>
+                        </ReactCardFlip>
 
-                <ReactCardFlip isFlipped={this.state.isFlipped[2]}>
-                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="2">
-                    <p className={classes.title}> Main Task </p>
+                        <ReactCardFlip isFlipped={this.state.isFlipped[2]}>
+                            <div className={classes.cardFront} onMouseOver={this.handleClick} id="2">
+                                <p className={classes.title}> Main Task </p>
 
-                    </div>
+                            </div>
 
-                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="2">
-                    <p className={classes.subtitle}>To start with, we have the YouTube watch histories for 6 different users below. Scroll
-                                through the videos and choose the playlist of videos which either resembles your own YouTube watch
-                                history or most interests you.</p>
+                            <div className={classes.cardBack} onMouseOut={this.handleClick} id="2">
+                                <p className={classes.subtitle}>To start with, we have the YouTube watch histories for 6
+                                    different users below. Scroll
+                                    through the videos and choose the playlist of videos which either resembles your own
+                                    YouTube watch
+                                    history or most interests you.</p>
 
-                    </div>
-                </ReactCardFlip>
+                            </div>
+                        </ReactCardFlip>
 
-                </Grid>
+                    </Grid>
                 </Box>
 
                 <br/><br/>
                 <RandomPlaylists/>
+
+                <br/><br/>
                 <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
+                <h4 className={classes.textHeader}>Select the playlist that most resembles your own or one that interests
+                    you.</h4>
+                <br/>
 
                 <form onSubmit={this.formSubmit} className={classes.textHeader}>
                     <div>
@@ -216,7 +232,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user0"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 1
+                            &nbsp;Playlist 1
                         </label>
                     </div>
                     <div>
@@ -227,7 +243,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user1"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 2
+                            &nbsp;Playlist 2
                         </label>
                     </div>
                     <div>
@@ -238,7 +254,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user2"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 3
+                            &nbsp;Playlist 3
                         </label>
                     </div>
                     <div>
@@ -249,7 +265,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user3"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 4
+                            &nbsp;Playlist 4
                         </label>
                     </div>
                     <div>
@@ -260,7 +276,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user4"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 5
+                            &nbsp;Playlist 5
                         </label>
                     </div>
                     <div>
@@ -271,7 +287,7 @@ class Playlists extends React.Component {
                                 checked={this.state.selectedOption === "user5"}
                                 onChange={this.onValueChange}
                             />
-                            Playlist 6
+                            &nbsp;Playlist 6
                         </label>
                     </div>
 

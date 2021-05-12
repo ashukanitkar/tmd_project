@@ -21,7 +21,6 @@ const styles = theme => ({
         '&:hover': {
             backgroundColor: "#E9BD71",
         },
-        marginRight: "10px",
     },
     secondaryButton: {
         background: "#709956",
@@ -32,7 +31,6 @@ const styles = theme => ({
         '&:hover': {
             backgroundColor: "#709956",
         },
-        marginRight: "10px",
     },
     defaultButton: {
         background: "#deded8",
@@ -43,7 +41,6 @@ const styles = theme => ({
         '&:hover': {
             backgroundColor: "#deded8",
         },
-        marginRight: "10px",
     },
 
     container: {
@@ -135,17 +132,25 @@ class Comparison extends React.Component {
 
                 </Box>
                 <Box py="3%">
-                    <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
-                        <Button variant="contained" className={classes.defaultButton} component={Link}
-                                to="/playlists">
-                            Select Another Playlist
-                        </Button>
-                        <Button variant="contained" className={classes.primaryButton} component={Link} to="/findings">
-                            Continue to Findings
-                        </Button>
-                        <Button variant="contained" className={classes.defaultButton} component={Link} to="/">
-                            Start over
-                        </Button>
+                    <Grid container spacing={3}>
+                        <Grid item xs style={{display: "flex", flexDirection: "column"}}>
+                            <Button variant="contained" className={classes.defaultButton} component={Link}
+                                    to="/playlists">
+                                Select Another Playlist
+                            </Button>
+                        </Grid>
+
+                        <Grid item xs style={{display: "flex", flexDirection: "column"}}>
+                            <Button variant="contained" className={classes.primaryButton} component={Link}
+                                    to="/findings">
+                                Continue to Findings
+                            </Button>
+                        </Grid>
+                        <Grid item xs style={{display: "flex", flexDirection: "column"}}>
+                            <Button variant="contained" className={classes.defaultButton} component={Link} to="/">
+                                Start over
+                            </Button>
+                        </Grid>
                     </Grid>
                 </Box>
             </div>
