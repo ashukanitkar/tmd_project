@@ -18,10 +18,22 @@ const styles = theme => ({
         padding: "25px",
     },
 
-    card: {
-        width: "400px",
-        height: "400px",
-        backgroundColor: "yellow"
+    cardFront: {
+        width: "450px",
+        height: "450px",
+        backgroundColor: "#ecc787",
+        display: "flex",
+        padding: "10px",
+        border: "3px solid black"
+    },
+
+    cardBack: {
+        width: "450px",
+        height: "450px",
+        backgroundColor: "#ffffff",
+        display: "flex",
+        padding: "10px",
+        border: "3px solid black"
     },
 
     primaryButton: {
@@ -50,7 +62,15 @@ const styles = theme => ({
     },
     title: {
         fontSize: "32px",
-        fontFamily: "Didot"
+        fontFamily: "Didot",
+        textAlign: "center",
+        verticalAlign: "middle",
+        margin: "auto"
+    },
+    subtitle: {
+        fontSize: "15px",
+        fontFamily: "Montserrat",
+        margin: "auto"
     }
 });
 
@@ -120,13 +140,13 @@ class Playlists extends React.Component {
                 <Box>
                 <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
                 <ReactCardFlip isFlipped={this.state.isFlipped[0]}>
-                    <div className={classes.card} onMouseOver={this.handleClick} id="0">
+                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="0">
                     <p className={classes.title}> Background </p>
 
                     </div>
 
-                    <div className={classes.card} onMouseOut={this.handleClick} id="0">
-                    <p>
+                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="0">
+                    <p className={classes.subtitle}>
                     When watching any video on YouTube, there is an Up Next section on the right of the screen with
                     videos YouTube curates and recommends for a user to watch next. YouTube heavily personalizes
                     recommended videos
@@ -149,13 +169,13 @@ class Playlists extends React.Component {
                 </ReactCardFlip>
 
                 <ReactCardFlip isFlipped={this.state.isFlipped[1]}>
-                    <div className={classes.card} onMouseOver={this.handleClick} id="1">
+                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="1">
                     <p className={classes.title}> Context </p>
 
                     </div>
 
-                    <div className={classes.card} onMouseOut={this.handleClick} id="1">
-                    <p>
+                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="1">
+                    <p className={classes.subtitle}>
                     By choosing a playlist that most resembles your own watch history, you can use this site as a
                     starting
                     point to understand what your own filter bubble may look like when compared to other accounts with
@@ -167,13 +187,13 @@ class Playlists extends React.Component {
                 </ReactCardFlip>
 
                 <ReactCardFlip isFlipped={this.state.isFlipped[2]}>
-                    <div className={classes.card} onMouseOver={this.handleClick} id="2">
+                    <div className={classes.cardFront} onMouseOver={this.handleClick} id="2">
                     <p className={classes.title}> Main Task </p>
 
                     </div>
 
-                    <div className={classes.card} onMouseOut={this.handleClick} id="2">
-                    <p>To start with, we have the YouTube watch histories for 6 different users below. Scroll
+                    <div className={classes.cardBack} onMouseOut={this.handleClick} id="2">
+                    <p className={classes.subtitle}>To start with, we have the YouTube watch histories for 6 different users below. Scroll
                                 through the videos and choose the playlist of videos which either resembles your own YouTube watch
                                 history or most interests you.</p>
 
