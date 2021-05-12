@@ -3,6 +3,11 @@ import autoBind from 'auto-bind';
 import {withStyles} from "@material-ui/core/styles";
 import {Button} from '@material-ui/core'
 import RandomPlaylists from './RandomPlaylists';
+import ReactCardFlip from 'react-card-flip'
+import Box from "@material-ui/core/Box";
+import Grid from '@material-ui/core/Grid';
+
+
 
 const styles = theme => ({
     root: {
@@ -11,6 +16,12 @@ const styles = theme => ({
         fontFamily: "Montserrat",
         fontWeight: "500",
         padding: "25px",
+    },
+
+    card: {
+        width: "400px",
+        height: "400px",
+        backgroundColor: "yellow"
     },
 
     primaryButton: {
@@ -36,6 +47,10 @@ const styles = theme => ({
     textBody: {
         alignSelf: "center",
         width: "65%"
+    },
+    title: {
+        fontSize: "32px",
+        fontFamily: "Didot"
     }
 });
 
@@ -50,11 +65,13 @@ class Playlists extends React.Component {
             timeout: 500,
             navButtonsAlwaysVisible: true,
             navButtonsAlwaysInvisible: false,
-            selectedOption: null
+            selectedOption: null,
+            isFlipped: [false, false, false]
         }
 
         this.onValueChange = this.onValueChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this)
 
         autoBind(this);
     }
@@ -63,6 +80,18 @@ class Playlists extends React.Component {
         this.setState({
             selectedOption: event.target.value
         });
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+        console.log(e.target.id)
+        console.log(parseInt(e.target.id))
+        var oldState = this.state.isFlipped
+        const index = parseInt(e.target.id)
+        console.log(oldState, "before the set")
+        oldState[index] = !oldState[index]
+        console.log(oldState)
+        this.setState({ isFlipped: oldState });
     }
 
     formSubmit(event) {
@@ -88,17 +117,16 @@ class Playlists extends React.Component {
         const {classes, theme} = this.props;
         return (
             <div className={classes.root}>
-                <h3 className={classes.textHeader}>Main Task</h3>
-                <br/>
-                <div className={classes.textBody}>
-                    To start with, we have the YouTube watch histories for 6 different users below. Scroll
-                    through the videos and choose the playlist of videos which either resembles your own YouTube watch
-                    history or most interests you.
-                </div>
-                <br/><br/>
+                <Box>
+                <Grid container direction="row" justify="space-evenly" alignItems="flex-start" my="6%">
+                <ReactCardFlip isFlipped={this.state.isFlipped[0]}>
+                    <div className={classes.card} onMouseOver={this.handleClick} id="0">
+                    <p className={classes.title}> Background </p>
 
-                <h3 className={classes.textHeader}>Background</h3>
-                <div className={classes.textBody}>
+                    </div>
+
+                    <div className={classes.card} onMouseOut={this.handleClick} id="0">
+                    <p>
                     When watching any video on YouTube, there is an Up Next section on the right of the screen with
                     videos YouTube curates and recommends for a user to watch next. YouTube heavily personalizes
                     recommended videos
@@ -115,14 +143,46 @@ class Playlists extends React.Component {
                     left and 2 right leaning accounts along with 2 control accounts with more varied mostly
                     non-political
                     content.
+                    </p>
 
-                    <br/><br/>
+                    </div>
+                </ReactCardFlip>
+
+                <ReactCardFlip isFlipped={this.state.isFlipped[1]}>
+                    <div className={classes.card} onMouseOver={this.handleClick} id="1">
+                    <p className={classes.title}> Context </p>
+
+                    </div>
+
+                    <div className={classes.card} onMouseOut={this.handleClick} id="1">
+                    <p>
                     By choosing a playlist that most resembles your own watch history, you can use this site as a
                     starting
                     point to understand what your own filter bubble may look like when compared to other accounts with
                     much
                     different interests and preferences.
-                </div>
+                    </p>
+
+                    </div>
+                </ReactCardFlip>
+
+                <ReactCardFlip isFlipped={this.state.isFlipped[2]}>
+                    <div className={classes.card} onMouseOver={this.handleClick} id="2">
+                    <p className={classes.title}> Main Task </p>
+
+                    </div>
+
+                    <div className={classes.card} onMouseOut={this.handleClick} id="2">
+                    <p>To start with, we have the YouTube watch histories for 6 different users below. Scroll
+                                through the videos and choose the playlist of videos which either resembles your own YouTube watch
+                                history or most interests you.</p>
+
+                    </div>
+                </ReactCardFlip>
+
+                </Grid>
+                </Box>
+
                 <br/><br/>
                 <RandomPlaylists/>
                 <h2 className={classes.textHeader}>Which playlist would you watch?</h2>
